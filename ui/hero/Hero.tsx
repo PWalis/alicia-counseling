@@ -7,7 +7,7 @@ export function Hero() {
     <div style={{
       backgroundImage: "url(/assets/hero_background.png)",
       backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
+      backgroundSize: "contain",
       backgroundPositionY: "center",
     }} className="w-full flex justify-center">
       <section className="grid pt-36 pb-36 grid-cols-5 grid-rows-10 sm:grid-cols-4 sm:grid-rows-12 p-5 max-w-7xl max-h-max">
