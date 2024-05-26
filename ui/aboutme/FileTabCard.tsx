@@ -117,7 +117,7 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "background" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400"
+          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400"
         >
           <p>
             Aside from personal and lived experience with various aspects of
@@ -149,7 +149,7 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "education" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400"
+          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400"
         >
           <p>
             I hold a Master’s Degree in Clinical Mental Health Counseling from
