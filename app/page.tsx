@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Hero } from "@/ui/hero/Hero";
 import { Quotes } from "@/ui/quotes/Quotes";
 import { AboutMe } from "@/ui/aboutme/AboutMe";
+import { ClinicalApproach } from "@/ui/clinicalApproach/ClinicalApproach";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Quotes />
       <AboutMe />
+      <ClinicalApproach /> 
     </main>
   );
 }

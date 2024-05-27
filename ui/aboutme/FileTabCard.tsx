@@ -85,12 +85,15 @@ export function FileTabCard() {
           <p>Education</p>
         </motion.div>
       </div>
-      <div className="bg-white relative row-start-2 row-span-7 col-start-1 col-span-8">
+      <div  className="bg-white relative row-start-2 row-span-7 col-start-1 col-span-8">
         <motion.div
           initial="active"
           animate={tab === "biography" ? "active" : "nonActive"}
           variants={cardVariants}
           className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400"
+          style={{
+            boxShadow: "14px 14px #888888",
+          }}
         >
           <h4 className="font-semibold">Hey y'all!</h4>
           <p className="font-semibold">
@@ -118,6 +121,9 @@ export function FileTabCard() {
           animate={tab === "background" ? "active" : "nonActive"}
           variants={cardVariants}
           className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400"
+          style={{
+            boxShadow: "14px 14px #888888",
+          }}
         >
           <p>
             Aside from personal and lived experience with various aspects of
@@ -150,6 +156,9 @@ export function FileTabCard() {
           animate={tab === "education" ? "active" : "nonActive"}
           variants={cardVariants}
           className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400"
+          style={{
+            boxShadow: "14px 14px #888888",
+          }}
         >
           <p>
             I hold a Master’s Degree in Clinical Mental Health Counseling from
