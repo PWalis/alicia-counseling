@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lexend_Deca } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/ui/header/Header"
 
-const inter = Inter({ subsets: ["latin"] });
+const LexendDeca = Lexend_Deca({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={LexendDeca.className}>
         <Header /> 
         {children}</body>
     </html>
