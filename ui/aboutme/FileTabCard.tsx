@@ -1,6 +1,7 @@
 "use client";
 import react, { useState } from "react";
 import { motion } from "framer-motion";
+import clsx from 'clsx';
 
 export function FileTabCard() {
   const [tab, setTab] = useState("biography");
@@ -11,7 +12,7 @@ export function FileTabCard() {
       x: "0%",
       transition: {
         delay: 0,
-        duration: 0.15,
+        duration: 0.1,
         ease: [0.74, 0, 0.19, 1.02],
       },
     },
@@ -21,7 +22,7 @@ export function FileTabCard() {
       x: "2%",
       transition: {
         delay: 0,
-        duration: 0.1,
+        duration: 0.3,
         ease: [0.74, 0, 0.19, 1.02],
       },
     },
@@ -36,7 +37,7 @@ export function FileTabCard() {
         duration: 0.15,
         ease: [0.74, 0, 0.19, 1.02],
       },
-      backgroundColor: "#FFEC8D"
+      backgroundColor: "#FFEC8D",
     },
     nonActive: {
       y: "15%",
@@ -46,7 +47,7 @@ export function FileTabCard() {
         duration: 0.1,
         ease: [0.74, 0, 0.19, 1.02],
       },
-      backgroundColor: "#F9F9F9"
+      backgroundColor: "#F9F9F9",
     },
   };
 
@@ -71,7 +72,7 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "background" ? "active" : "nonActive"}
           variants={tabVariants}
-          className="px-1.5 xs:px-2 md:px-5   h-20 pt-2 border border-1 border-gray-400 bg-white rounded-t-[20px] hover:cursor-pointer"
+          className="px-1.5 xs:px-2 md:px-5   h-20 pt-2 border border-1 border-gray-400  rounded-t-[20px] hover:cursor-pointer"
         >
           <p>Background</p>
         </motion.div>
@@ -85,12 +86,12 @@ export function FileTabCard() {
           <p>Education</p>
         </motion.div>
       </div>
-      <div  className="bg-white relative row-start-2 row-span-7 col-start-1 col-span-8">
+      <div className="relative row-start-2 row-span-7 col-start-1 col-span-8">
         <motion.div
           initial="active"
           animate={tab === "biography" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400"
+          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white"
           style={{
             boxShadow: "14px 14px #888888",
           }}
@@ -118,44 +119,9 @@ export function FileTabCard() {
         </motion.div>
         <motion.div
           initial="nonActive"
-          animate={tab === "background" ? "active" : "nonActive"}
-          variants={cardVariants}
-          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400"
-          style={{
-            boxShadow: "14px 14px #888888",
-          }}
-        >
-          <p>
-            Aside from personal and lived experience with various aspects of
-            mental health, I have been working in the world of mental health
-            since 2010 having initially spent 9 years working with individuals
-            with intellectual and developmental disabilities, Autism, ADHD and
-            their families/foster care providers with behavior modification,
-            intervention, advocacy, and case management.{" "}
-          </p>
-          <p>
-            Through my personal experience and my 9 years of working with the
-            neurodivergent population, neurodivergence and neurodivergence
-            advocacy became a passion of mine. My background is not limited to
-            neurodivergence however, as I have served as a local mental health
-            crisis worker, worked with pervasive mental illness and within an
-            inpatient psychiatric hospital setting, and even in the criminal
-            justice system.
-          </p>
-          <p>
-            In addition, along with my own advocacy efforts towards
-            neurodivergence, I have also provided Special Education Counseling
-            in a school setting, been a counselor in a group practice, and now
-            my road takes me to providing counseling to those in my local,
-            rural, community. Additionally, I have served as a group leader for
-            grief process groups for kiddos.
-          </p>
-        </motion.div>
-        <motion.div
-          initial="nonActive"
           animate={tab === "education" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400"
+          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white"
           style={{
             boxShadow: "14px 14px #888888",
           }}
@@ -169,6 +135,44 @@ export function FileTabCard() {
             in Child Learning and Development at the University of Texas at
             Dallas.
           </p>
+        </motion.div>
+        <motion.div
+          initial="nonActive"
+          animate={tab === "background" ? "active" : "nonActive"}
+          variants={cardVariants}
+          className="absolute p-3 sm:p-7 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white max-h-[550px] overflow-hidden"
+          style={{
+            boxShadow: "14px 14px #888888",
+            scrollbarGutter: "stable",
+          }}
+        >
+          <div className="overflow-auto p-3 z-20">
+            <p>
+              Aside from personal and lived experience with various aspects of
+              mental health, I have been working in the world of mental health
+              since 2010 having initially spent 9 years working with individuals
+              with intellectual and developmental disabilities, Autism, ADHD and
+              their families/foster care providers with behavior modification,
+              intervention, advocacy, and case management.
+            </p>
+            <p>
+              Through my personal experience and my 9 years of working with the
+              neurodivergent population, neurodivergence and neurodivergence
+              advocacy became a passion of mine. My background is not limited to
+              neurodivergence however, as I have served as a local mental health
+              crisis worker, worked with pervasive mental illness and within an
+              inpatient psychiatric hospital setting, and even in the criminal
+              justice system.
+            </p>
+            <p>
+              In addition, along with my own advocacy efforts towards
+              neurodivergence, I have also provided Special Education Counseling
+              in a school setting, been a counselor in a group practice, and now
+              my road takes me to providing counseling to those in my local,
+              rural, community. Additionally, I have served as a group leader
+              for grief process groups for kiddos.
+            </p>
+          </div>
         </motion.div>
       </div>
     </div>

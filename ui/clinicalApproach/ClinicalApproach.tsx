@@ -2,9 +2,9 @@ import react from "react";
 
 export function ClinicalApproach() {
   return (
-    <section className="flex w-full gap-5 items-center flex-col p-5 bg-gray-700">
+    <section className="flex w-full gap-5 items-center flex-col p-5">
       <div className="w-full max-w-7xl">
-        <h2 className="text-white text-4xl">My Clinical Approach</h2>
+        <h2 className="text-4xl font-semibold">My Clinical <span className="text-purple-500">Approach</span></h2>
       </div>
       <div className="py-6 px-5 sm:py-10 sm:px-12 bg-gray-400 max-w-4xl mx-auto rounded-[20px]">
         <div className="font-medium py-3 px-5 rounded-[20px] bg-gray-200 flex flex-col gap-4">
