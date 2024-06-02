@@ -37,8 +37,8 @@ export const Header = () => {
   }
 
   return (
-    <header className="w-full sticky top-0 z-50">
-      <div className="pl-5 h-5 w-full bg-slate-700 text-white flex items-center">
+    <header className="w-full fixed top-0 z-50">
+      <div className="pl-5 mb-2 h-5 w-full bg-slate-700 text-white flex items-center">
         In case of emergency please call 988
       </div>
       <div className="h-20 bg-zinc-700 rounded-lg mx-2 flex justify-between relative">
