@@ -1,6 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+.lexend-deca-class {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-family: "Lexend Deca", sans-serif;
+}
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
@@ -12,4 +25,8 @@
     background-color: #454545;
     border-radius: 10px;
     border: 5px none #ffffff;
+  }
+
+  .navblur {
+    backdrop-filter: blur(12px);
   }
