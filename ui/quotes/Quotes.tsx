@@ -7,7 +7,6 @@ import useWindowDimensions from "@/hooks/UseWindowDimensions";
 
 export function Quotes() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [inView, setInView] = useState(false);
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -20,7 +19,7 @@ export function Quotes() {
     "Just do it",
     "I'm lovin it",
     "LETS GO BABY!!!!",
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, cumque.",
+    "Lorem ipsum dolor, sit amet consectetur.",
   ];
 
   const variants = {
