@@ -12,14 +12,14 @@ export function AboutMe() {
         backgroundSize: "cover",
         backgroundPositionY: "center",
       }}
-      className="w-full flex justify-center pt-80"
+      className="w-full flex justify-center pt-24 sm:pt-80 px-14"
     >
-      <h2 className="absolute left-80 text-4xl font-semibold tracking-wider text-white">
-        A little About Me
-      </h2>
-      <section className="flex flex-col gap-6 sm:flex-row px-3 pb-96">
-        <div className="relative h-[500px] w-[480px]">
+      <section className="flex flex-col gap-6 md:flex-row pb-96">
+        <div className="relative">
           <div className="relative">
+            <h2 className="absolute min-w-[340px] -left-5 -top-12 text-4xl font-semibold tracking-wider text-white">
+              A little About Me
+            </h2>
             <Image
               className="rounded-[20px] h-[500px] w-[480px] object-cover"
               alt="about-me-image"
