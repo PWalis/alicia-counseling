@@ -6,6 +6,7 @@ import { ClinicalApproach } from "@/ui/clinicalApproach/ClinicalApproach";
 import { Services } from "@/ui/services/Services";
 import { Pricing } from "@/ui/pricing/Pricing";
 import { FAQ } from "@/ui/faq/FAQ";
+import { Process } from "@/ui/process/Process";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutMe />
       <ClinicalApproach />
       <Services />
+      <Process />
       <Pricing />
       <FAQ />
     </main>
