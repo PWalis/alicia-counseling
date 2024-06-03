@@ -5,7 +5,7 @@ import logo from "@/public/icons8-logo.svg";
 import { Turn as Hamburger } from "hamburger-react";
 import clsx from "clsx";
 import { motion, useTransform } from "framer-motion";
-import useWindowDimensions from "@/hooks/UseWindowDimensions";
+import useWindowDimensions from "@/lib/UseWindowDimensions";
 
 export const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);

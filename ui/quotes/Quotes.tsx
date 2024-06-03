@@ -3,7 +3,7 @@ import react, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import clsx from "clsx";
-import useWindowDimensions from "@/hooks/UseWindowDimensions";
+import useWindowDimensions from "@/lib/UseWindowDimensions";
 
 export function Quotes() {
   const [currentIndex, setCurrentIndex] = useState(0);
