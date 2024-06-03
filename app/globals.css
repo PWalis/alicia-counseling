@@ -30,3 +30,21 @@ html {
   .navblur {
     backdrop-filter: blur(12px);
   }
+
+  .clinical-bg {
+      background-image: url(../public/assets/clinical_background.png);
+  }
+
+  .pricing-bg {
+    background-image: url(../public/assets/pricing_background.png);
+  }
+
+  .shadow-custom {
+    box-shadow: -20px 20px rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+  }
+
+  .shadow-custom2 {
+    box-shadow: 20px 20px rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+  }

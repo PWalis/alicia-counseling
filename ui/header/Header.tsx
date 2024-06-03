@@ -41,7 +41,7 @@ export const Header = () => {
       {/* <div className="pl-5 mb-2 h-5 w-full bg-white opacity-80 text-black flex items-center p-3 border-1 border-[#838383]">
         <p> In case of emergency please call 988</p>
       </div> */}
-      <div className="h-24 px-10 bg-[#181818] text-white rounded-lg mx-3 lg:mx-40 flex justify-between relative drop-shadow-sm navblur">
+      <div className="h-24 px-10 bg-[#181818] text-white rounded-lg mx-3 xl:mx-40 flex justify-between relative drop-shadow-sm navblur">
         <div className="flex justify-start items-center">
           <Image alt="logo" src={logo} height={80} width={80} />
           <div className="flex flex-col">
