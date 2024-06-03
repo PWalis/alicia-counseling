@@ -91,10 +91,7 @@ export function FileTabCard() {
           initial="active"
           animate={tab === "biography" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white"
-          style={{
-            boxShadow: "14px 14px #888888",
-          }}
+          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white shadow-custom2"
         >
           <h4 className="font-semibold">Hey y'all!</h4>
           <p className="font-semibold">
@@ -121,10 +118,7 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "education" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white"
-          style={{
-            boxShadow: "14px 14px #888888",
-          }}
+          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white shadow-custom2"
         >
           <p>
             I hold a Master’s Degree in Clinical Mental Health Counseling from
@@ -140,9 +134,8 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "background" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 sm:p-7 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white max-h-[550px] overflow-hidden"
+          className="absolute p-3 sm:p-7 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white max-h-[550px] overflow-hidden shadow-custom2"
           style={{
-            boxShadow: "14px 14px #888888",
             scrollbarGutter: "stable",
           }}
         >

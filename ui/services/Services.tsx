@@ -18,7 +18,7 @@ export function Services() {
   return (
     <section className="pt-16 px-3 max-w-5xl w-full">
       <div className="pb-10">
-        <h2 className="text-5xl text-blue-500">Personalize Your Coach Talk</h2>
+        <h2 className="text-5xl text-black font-light">Personalize Your <span className="font-bold text-blue-500">Couch Talk</span></h2>
       </div>
       <div className="">
         <h3 className="text-xl font-semibold">What I Specialize In</h3>
