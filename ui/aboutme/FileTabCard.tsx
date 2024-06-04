@@ -13,17 +13,17 @@ export function FileTabCard() {
       transition: {
         delay: 0,
         duration: 0.1,
-        ease: [0.74, 0, 0.19, 1.02],
+        ease: [0, 0, 0.85, 1.02],
       },
     },
     nonActive: {
       opacity: 0,
-      scale: "90%",
-      zIndex: -1,
+      scale: "70%",
+      zIndex: 0,
       transition: {
         delay: 0,
         duration: 0.3,
-        ease: [0.74, 0, 0.19, 1.02],
+        ease: [0.85, 0.50, 0.19, 1.02],
       },
     },
   };

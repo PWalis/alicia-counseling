@@ -18,18 +18,18 @@ export function Process() {
   return (
     <section className="flex fade-bg bg-cover bg-center pt-[15rem] pb-48 w-full gap-5 items-center flex-col">
       <div className="w-full max-w-7xl">
-        <h2 className="text-5xl font-light tracking-wider mb-5 text-white">
+        <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5 text-white">
           Setting your 
-          <span className=" font-bold"> Appointment</span>
+          <span className="font-bold"> Appointment</span>
         </h2>
       </div>
-      <div className="flex flex-col items-center text-white">
+      <div className="flex flex-col px-3 items-center text-white">
         <h4 className="text-center text-xl font-semibold">
           I know how difficult it can be to ask for help.
         </h4>
-        <p className="text-xl">I'm here to make the process <span className="">easy </span> and <span className="">transparent.</span> </p>
+        <p className="text-center text-xl">I'm here to make the process <span className="">easy </span> and <span className="">transparent.</span> </p>
       </div>
-      <div className="overflow-hidden pb-5">
+      <div className="overflow-hidden pb-5 max-w-7xl w-full">
         <motion.div
           drag={isSmallScreen ? "x" : false}
           dragConstraints={{
