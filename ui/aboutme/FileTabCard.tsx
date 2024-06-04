@@ -8,8 +8,8 @@ export function FileTabCard() {
   const cardVariants = {
     active: {
       opacity: 1,
-      y: "0%",
-      x: "0%",
+      scale: "100%",
+      zIndex: 10,
       transition: {
         delay: 0,
         duration: 0.1,
@@ -18,8 +18,8 @@ export function FileTabCard() {
     },
     nonActive: {
       opacity: 0,
-      y: "1%",
-      x: "2%",
+      scale: "90%",
+      zIndex: -1,
       transition: {
         delay: 0,
         duration: 0.3,
@@ -31,7 +31,6 @@ export function FileTabCard() {
   const tabVariants = {
     active: {
       y: "3%",
-      x: "0%",
       transition: {
         delay: 0,
         duration: 0.15,
@@ -41,7 +40,6 @@ export function FileTabCard() {
     },
     nonActive: {
       y: "15%",
-      x: "5%",
       transition: {
         delay: 0,
         duration: 0.1,
@@ -56,14 +54,14 @@ export function FileTabCard() {
   };
 
   return (
-    <div className="grid grid-cols-3 grid-rows-8 mt-10 w-full min-w-80 max-w-md">
-      <div className="flex flex-row justify-between col-span-3 h-12 px-5 w-full">
+    <div className="grid grid-cols-3 grid-rows-8 mt-10 w-full min-w-72 max-w-xl">
+      <div className="flex flex-row justify-between col-span-3 h-12 w-full">
         <motion.div
           onClick={() => handleOnClick("biography")}
           initial="active"
           animate={tab === "biography" ? "active" : "nonActive"}
           variants={tabVariants}
-          className="px-1.5 xs:px-2 md:px-5 h-28 pt-2 border border-1 border-gray-400 rounded-t-[20px] hover:cursor-pointer"
+          className="flex justify-center pt-1 w-full h-20 border border-1 border-gray-400 rounded-t-[20px] hover:cursor-pointer"
         >
           <p>Biography</p>
         </motion.div>
@@ -72,7 +70,7 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "background" ? "active" : "nonActive"}
           variants={tabVariants}
-          className="px-1.5 xs:px-2 md:px-5   h-20 pt-2 border border-1 border-gray-400  rounded-t-[20px] hover:cursor-pointer"
+          className="flex justify-center pt-1 w-full h-20 border border-1 border-gray-400  rounded-t-[20px] hover:cursor-pointer"
         >
           <p>Background</p>
         </motion.div>
@@ -81,7 +79,7 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "education" ? "active" : "nonActive"}
           variants={tabVariants}
-          className="px-1.5 xs:px-2 md:px-5  h-20 pt-2 border border-1 border-gray-400 bg-white rounded-t-[20px] hover:cursor-pointer"
+          className="flex justify-center pt-1 w-full h-20 border border-1 border-gray-400 bg-white rounded-t-[20px] hover:cursor-pointer"
         >
           <p>Education</p>
         </motion.div>

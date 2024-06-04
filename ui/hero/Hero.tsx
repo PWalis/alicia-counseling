@@ -22,9 +22,9 @@ export function Hero() {
           />
           <p className="text-left">Meet  <span className="font-bold"> Alicia, </span></p>
         </div>
-        <div className="pb-4 sm:pb-0 col-span-5 row-start-1 row-end-5 sm:col-start-2 sm:col-span-2 sm:row-start-3 sm:row-span-6 flex justify-center flex-col items-center pt-14 sm:p-5">
-          <h1 className="text-4xl sm:text-6xl sm:text-center text-white tracking-[.2em] font-light">
-            Your Mental Health <span className="font-extrabold text-5xl sm:text-7xl">MATTERS.</span>
+        <div className="z-10 pb-4 sm:pb-0 col-span-5 row-start-1 row-end-5 sm:col-start-2 sm:col-span-2 sm:row-start-3 sm:row-span-6 flex justify-center flex-col items-center pt-14 sm:p-5">
+          <h1 className="text-4xl xs:text-6xl sm:text-center text-white tracking-[.2em] font-light">
+            Your Mental Health <span className="font-extrabold text-5xl xs:text-7xl">MATTERS.</span>
           </h1>
           <p className="sm:text-center sm:max-w-[28rem] pt-2 text-white tracking-wide font-semibold">
             I am here to help you flourish through my coaching, counseling or group specializations to make sure you get the treatment that you deserve.
