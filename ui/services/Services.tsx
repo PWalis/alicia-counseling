@@ -18,10 +18,10 @@ export function Services() {
   return (
     <section className="pt-16 px-3 w-full items-center flex flex-col">
       <div className="pb-10 w-full max-w-7xl">
-        <h2 className="text-5xl text-black font-light">Personalize Your <span className="font-bold text-blue-500">Couch Talk</span></h2>
+        <h2 className="text-center sm:text-left text-5xl text-black font-light">Personalize Your <span className="font-bold text-blue-500">Couch Talk</span></h2>
       </div>
       <div className="">
-        <h3 className="text-2xl pb-2">What I <span className="text-blue-500 font-semibold">Specialize</span> In:</h3>
+        <h3 className="text-center sm:text-left text-2xl pb-2">What I <span className="text-blue-500 font-semibold">Specialize</span> In:</h3>
         <div className="max-w-6xl">
           <ul className="p-10 border border-blue-500 rounded-[20px] sm:columns-2 list-disc list-inside px-10 space-y-2">
             <li>Mood disorders</li>
