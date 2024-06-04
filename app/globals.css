@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 
 .lexend-deca-class {
   font-family: "Lexend Deca", sans-serif;
@@ -15,41 +14,51 @@ html {
   font-family: "Lexend Deca", sans-serif;
 }
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 10px;
-    border-radius: 10px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #454545;
-    border-radius: 10px;
-    border: 5px none #ffffff;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #454545;
+  border-radius: 10px;
+  border: 5px none #ffffff;
+}
 
-  .navblur {
-    backdrop-filter: blur(12px);
-  }
+.navblur {
+  backdrop-filter: blur(12px);
+}
 
-  .clinical-bg {
-      background-image: url(../public/assets/clinical_background.png);
-  }
+.clinical-bg {
+  background-image: url(../public/assets/clinical_background.png);
+}
 
-  .pricing-bg {
-    background-image: url(../public/assets/pricing_background.png);
-  }
+.pricing-bg {
+  background-image: url(../public/assets/pricing_background.png);
+}
 
-  .fade-bg {
-    background-image: url(../public/assets/bg_fade.png);
-  }
+.fade-bg {
+  background-image: url(../public/assets/bg_fade.png);
+}
 
+.shadow-custom {
+  box-shadow: -20px 20px rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
 
+.shadow-custom2 {
+  box-shadow: 20px 20px rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
+
+@media (max-width: 640px) {
   .shadow-custom {
-    box-shadow: -20px 20px rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 30px rgba(255, 255, 255, 0.8);
     border-radius: 20px;
   }
-
   .shadow-custom2 {
-    box-shadow: 20px 20px rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 30px rgba(255, 255, 255, 0.8);
     border-radius: 20px;
   }
+}
