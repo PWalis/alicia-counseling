@@ -68,21 +68,23 @@ export function FAQ() {
   };
 
   return (
-    <section className="pt-16 px-3 flex flex-col justify-center items-center w-full">
-      <h2 className="text-center sm:text-left text-4xl px-2 font-semibold pb-6">
-        Frequently Asked <span className="text-pink-500">Questions</span>
+    <section className="pt-16 px-3 flex flex-col justify-center items-center w-full mb-20">
+      <div className="w-full max-w-7xl mb-10">
+      <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5">
+        Frequently Asked <span className="text-pink-500 font-bold">Questions</span>
       </h2>
-      <div className="flex flex-col sm:flex-row gap-4 w-full max-w-lg sm:max-w-full justify-center">
-        <div className="sm:w-[400px] border border-teal-500 rounded-[20px] p-5 flex flex-col gap-2 drop-shadow-lg">
+      </div>
+    <div className="flex flex-col sm:flex-row gap-20 w-full max-w-lg sm:max-w-full justify-center">
+        <div className="sm:w-[500px] border border-[#5DD9C1] rounded-[20px] px-6 py-6 flex flex-col gap-3 drop-shadow-lg bg-white">
           <button
             onClick={() => handleTopicClick("topic1")}
-            className="bg-gray-200 rounded-full h-14 flex text-xl items-center"
+            className="bg-[#E7E7E7] rounded-[25px] h-[80px] flex text-xl items-center"
           >
             <svg
               viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              className="h-14"
+              className="h-20 pl-2"
             >
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g
@@ -94,17 +96,17 @@ export function FAQ() {
                 <path fill="#9e9e9e" d="M8 3a5 5 0 100 10A5 5 0 008 3z"></path>
               </g>
             </svg>
-            <p className="font-semibold pl-16">topic1</p>
+            <p className="font-semibold pl-2">topic1</p>
           </button>
           <button
             onClick={() => handleTopicClick("topic2")}
-            className="bg-gray-200 rounded-full h-14 flex text-xl items-center"
+            className=" rounded-[25px] h-[80px] flex text-xl items-center"
           >
             <svg
               viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              className="h-14"
+              className="h-20 pl-2"
             >
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g
@@ -116,17 +118,17 @@ export function FAQ() {
                 <path fill="#9e9e9e" d="M8 3a5 5 0 100 10A5 5 0 008 3z"></path>
               </g>
             </svg>
-            <p className="font-semibold pl-16">topic2</p>
+            <p className="font-semibold pl-2">topic2</p>
           </button>
           <button
             onClick={() => handleTopicClick("topic3")}
-            className="bg-gray-200 rounded-full h-14 flex text-xl items-center"
+            className=" rounded-[25px] h-[80px] flex text-xl items-center"
           >
             <svg
               viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              className="h-14"
+              className="h-20 pl-2"
             >
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g
@@ -138,17 +140,17 @@ export function FAQ() {
                 <path fill="#9e9e9e" d="M8 3a5 5 0 100 10A5 5 0 008 3z"></path>
               </g>
             </svg>
-            <p className="font-semibold pl-16">topic3</p>
+            <p className="font-semibold pl-2">topic3</p>
           </button>
           <button
             onClick={() => handleTopicClick("topic4")}
-            className="bg-gray-200 rounded-full h-14 flex text-xl items-center"
+            className=" rounded-[25px] h-[80px] flex text-xl items-center"
           >
             <svg
               viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              className="h-14"
+              className="h-20 pl-2"
             >
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g
@@ -160,10 +162,11 @@ export function FAQ() {
                 <path fill="#9e9e9e" d="M8 3a5 5 0 100 10A5 5 0 008 3z"></path>
               </g>
             </svg>
-            <p className="font-semibold pl-16">topic4</p>
+            <p className="font-semibold pl-2">topic4</p>
           </button>
         </div>
         <div className="sm:w-[400px]">
+          <h3 className="text-2xl text-[#636061]"> Topic title </h3>
           {topic &&
             faqs[topic].map((faq: any, index: any) => {
               return (
