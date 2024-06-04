@@ -5,7 +5,7 @@ export function Pricing() {
     <div className="pricing-bg w-full bg-cover bg-no-repeat bg-center">
     <section className=" px-3 flex flex-col pt-96 pb-96 gap-10 justify-center items-center">
     <div className="w-full max-w-7xl">
-        <h2 className="text-6xl font-light tracking-wider text-white ">My <span className="font-bold"> Pricing </span></h2>
+        <h2 className="text-center sm:text-left text-6xl font-light tracking-wider text-white ">My <span className="font-bold"> Pricing </span></h2>
       </div>
       <div className="p-3 text-center text-white font-semibold tracking-wider mx-auto text-[18px]">
         <p>

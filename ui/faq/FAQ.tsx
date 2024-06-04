@@ -69,7 +69,7 @@ export function FAQ() {
 
   return (
     <section className="pt-16 px-3 flex flex-col justify-center items-center w-full">
-      <h2 className="text-center text-4xl px-2 font-semibold pb-6">
+      <h2 className="text-center sm:text-left text-4xl px-2 font-semibold pb-6">
         Frequently Asked <span className="text-pink-500">Questions</span>
       </h2>
       <div className="flex flex-col sm:flex-row gap-4 w-full max-w-lg sm:max-w-full justify-center">
@@ -117,7 +117,7 @@ export function FAQ() {
               </g>
             </svg>
             <p className="font-semibold pl-16">topic2</p>
-          </button>{" "}
+          </button>
           <button
             onClick={() => handleTopicClick("topic3")}
             className="bg-gray-200 rounded-full h-14 flex text-xl items-center"
@@ -139,7 +139,7 @@ export function FAQ() {
               </g>
             </svg>
             <p className="font-semibold pl-16">topic3</p>
-          </button>{" "}
+          </button>
           <button
             onClick={() => handleTopicClick("topic4")}
             className="bg-gray-200 rounded-full h-14 flex text-xl items-center"
