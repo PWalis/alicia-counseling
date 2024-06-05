@@ -4,13 +4,13 @@ import heroBackground from "@/public/assets/hero_background.png"
 
 export function Hero() {
   return (
-    <div style={{
+    <section style={{
       backgroundImage: "url(/assets/hero_background.png)",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       backgroundPositionY: "bottom",
     }} className="w-full flex justify-center">
-      <section className="grid pt-20 sm:pt-36 pb-36 grid-cols-5 grid-rows-10 sm:grid-cols-4 sm:grid-rows-12 p-5 max-w-7xl max-h-max">
+      <div className="grid pt-20 sm:pt-36 pb-36 grid-cols-5 grid-rows-10 sm:grid-cols-4 sm:grid-rows-12 p-5 max-w-7xl max-h-max">
         <div className="col-start-1 col-end-4 row-start-5 row-end-9 row-span-4 sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-7">
           <Image
             alt="placeholder-1"
@@ -40,7 +40,7 @@ export function Hero() {
           />
           <p className="text-center"> MS Mental Health Counseling </p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

@@ -6,6 +6,7 @@ import pic1 from "@/public/assets/pic1.jpg";
 export function AboutMe() {
   return (
     <section
+    id="aboutMe"
       style={{
         backgroundImage: "url(/assets/about_background.png)",
         backgroundRepeat: "no-repeat",
