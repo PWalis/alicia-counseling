@@ -1,20 +1,12 @@
 "use client";
-import react, { useState, useEffect, useRef } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import fadebg from "@/public/images/fade-bg.png";
+import useWindowDimensions from "@/lib/UseWindowDimensions";
+
 
 export function Process() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const ref = useRef(null);
+  const { width } =  useWindowDimensions() 
 
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [windowWidth]);
-
-  const isSmallScreen = windowWidth < 964;
+  const isSmallScreen = width < 964;
 
   return (
     <section className="flex fade-bg bg-cover bg-center pt-[16rem] pb-[15rem] w-full gap-5 items-center flex-col">

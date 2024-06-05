@@ -1,4 +1,3 @@
-import react from "react";
 import Image from "next/image";
 import { FileTabCard } from "./FileTabCard";
 import pic1 from "@/public/assets/pic1.jpg";
