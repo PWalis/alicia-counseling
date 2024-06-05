@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={LexendDeca.className}>
         <Header /> 
-        {children}</body>
+        {children}<p className="fixed bottom-0 pl-3 text-center bg-white opacity-80 z-50 w-full">In case of emergency please call 988</p></body>
     </html>
   );
 }

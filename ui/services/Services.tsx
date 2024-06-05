@@ -16,7 +16,7 @@ export function Services() {
   };
 
   return (
-    <section className="pt-16 px-3 w-full items-center flex flex-col">
+    <section id='services' className="pt-16 px-3 w-full items-center flex flex-col">
       <div className="pb-10 w-full max-w-7xl">
         <h2 className="text-center sm:text-left text-5xl text-black font-light">Personalize Your <span className="font-bold text-blue-500">Couch Talk</span></h2>
       </div>

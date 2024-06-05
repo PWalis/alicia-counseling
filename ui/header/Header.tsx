@@ -22,8 +22,8 @@ export const Header = () => {
       transition: {
         delay: 0,
         duration: 1.1,
-        ease: [0.74, 0, 0.19, 1.02]
-      }
+        ease: [0.74, 0, 0.19, 1.02],
+      },
     },
     closed: {
       y: "-100%",
@@ -31,38 +31,108 @@ export const Header = () => {
       transition: {
         delay: 0.35,
         duration: 0.63,
-        ease: [0.74, 0, 0.19, 1.02]
-      }
-    }
-  }
+        ease: [0.74, 0, 0.19, 1.02],
+      },
+    },
+  };
 
   return (
-    <header className="w-full fixed top-2 z-50 drop-shadow-sm">
-      {/* <div className="pl-5 mb-2 h-5 w-full bg-white opacity-80 text-black flex items-center p-3 border-1 border-[#838383]">
+    <header className="w-full flex-col flex items-center z-50 fixed top-2">
+      {/* <div className="pl-5 mb-2 h-5 w-full bg-white backdrop-blur-[15px] opacity-90 text-black flex items-center p-3 border-1 border-[#838383]">
         <p> In case of emergency please call 988</p>
       </div> */}
-      <div className="h-24 px-10 bg-[#181818] text-white rounded-lg mx-3 xl:mx-40 flex justify-between relative drop-shadow-sm navblur">
-        <div className="flex justify-start items-center">
+      <div className="w-full flex justify-center max-w-[100rem] h-24 bg-[#181818c7] backdrop-blur-[15px] text-white rounded-lg mx-3 relative ">
+        <div className="w-full max-w-[45rem] flex  items-center">
           <Image alt="logo" src={logo} height={80} width={80} />
           <div className="flex flex-col">
-          <p className="uppercase font-extrabold tracking-wider">Couch Talk</p>
-          <p className="font-light tracking-wide text-sm"> Counseling and Coaching </p>
+            <p className="uppercase font-extrabold tracking-wider">
+              Couch Talk
+            </p>
+            <p className="font-light tracking-wide text-sm">
+              Counseling and Coaching
+            </p>
           </div>
         </div>
-        <div className="flex justify-end items-center">
-          <div className="sm:hidden z-10 absolute">
+        <div className="w-full sm:max-w-[45rem] flex justify-end items-center max-w-[5rem]">
+          <div className="md:hidden z-10 absolute pr-3">
             <Hamburger onToggle={handleToggle} />
           </div>
-          <motion.div variants={mobileMenuVariant} initial="closed" animate={width >= 640 || menuIsOpen ? "opened" : "closed"} className={clsx("h-[calc(100dvh)] w-screen top-0 absolute bg-zinc-500 sm:bg-transparent sm:pr-5 sm:flex sm:h-auto sm:w-auto sm:top-auto", menuIsOpen ? "content-center" : "hidden")}>
+          <motion.div
+            variants={mobileMenuVariant}
+            initial="closed"
+            animate={width >= 768 || menuIsOpen ? "opened" : "closed"}
+            className={clsx(
+              "h-[calc(110dvh)] w-screen absolute bg-[#181818] md:bg-transparent md:pr-5 md:flex md:h-auto md:w-auto md:top-auto",
+              menuIsOpen ? "-top-3 right-0 content-center" : "hidden"
+            )}
+          >
             <nav
-              className={clsx("sm:flex gap-4 uppercase font-light items-center tracking-wider", menuIsOpen ? "flex flex-col sm:flex-row items-center" : "hidden")}
+              className={clsx(
+                "sm:flex gap-4 uppercase font-light items-center tracking-wider",
+                menuIsOpen ? "flex flex-col md:flex-row items-center" : "hidden"
+              )}
             >
-              <a>Section</a>
-              <a>Section</a>
-              <a>Section</a>
+              <a
+                href="/"
+                onClick={(e) => {
+                  let aboutMe = document.getElementById("aboutMe");
+                  e.preventDefault();
+                  aboutMe &&
+                    aboutMe.scrollIntoView({
+                      behavior: "smooth",
+                      block: "center",
+                    });
+                }}
+              >
+                About Me
+              </a>
+              <a
+                href="/"
+                onClick={(e) => {
+                  let services = document.getElementById("services");
+                  e.preventDefault();
+                  services &&
+                    services.scrollIntoView({
+                      behavior: "smooth",
+                      block: "center",
+                    });
+                }}
+              >
+                Services
+              </a>
+              <a
+                href="/"
+                onClick={(e) => {
+                  let pricing = document.getElementById("pricing");
+                  e.preventDefault();
+                  pricing &&
+                    pricing.scrollIntoView({
+                      behavior: "smooth",
+                      block: "center",
+                    });
+                }}
+              >
+                Pricing
+              </a>
+              <a
+                href="/"
+                onClick={(e) => {
+                  let aboutMe = document.getElementById("aboutMe");
+                  e.preventDefault();
+                  aboutMe &&
+                    aboutMe.scrollIntoView({
+                      behavior: "smooth",
+                      block: "center",
+                    });
+                }}
+              >
+                FAQ
+              </a>
+              <button className="bg-white rounded-[15px] px-4 py-3 text-black uppercase font-medium">
+                Get in Touch
+              </button>
             </nav>
           </motion.div>
-          <button className="bg-white rounded-[15px] px-4 py-3 text-black uppercase font-medium"> Get in Touch </button>
         </div>
       </div>
     </header>
