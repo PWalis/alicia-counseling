@@ -1,7 +1,6 @@
 "use client";
-import react, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import clsx from 'clsx';
 
 export function FileTabCard() {
   const [tab, setTab] = useState("biography");

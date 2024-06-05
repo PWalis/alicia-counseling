@@ -1,6 +1,4 @@
-import react from "react";
 import Image from "next/image";
-import heroBackground from "@/public/assets/hero_background.png"
 
 export function Hero() {
   return (
