@@ -83,7 +83,7 @@ export function Quotes() {
   return (
     <section
       ref={ref}
-      className="h-[400px] grid grid-cols-4 grid-rows-2 sm:grid-rows-1 sm:grid-cols-12 sm:flex-row sm:justify-between items-center max-w-7xl w-full"
+      className="h-[200px] grid grid-cols-4 grid-rows-2 sm:grid-rows-1 sm:grid-cols-12 sm:flex-row sm:justify-between items-center max-w-7xl w-full"
     >
       <button className="z-10 mx-auto col-start-2 w-fit sm:translate-x-0 row-start-2 sm:row-start-1 sm:col-start-1" onClick={handlePrevious}>
         Left
