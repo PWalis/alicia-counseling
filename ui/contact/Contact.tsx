@@ -1,6 +1,6 @@
 export function Contact() {
   return (
-    <section className="flex w-full gap-5 items-center justify-center flex-col p-3 mb-20 mt-20">
+    <section id='contact' className="flex w-full gap-5 items-center justify-center flex-col p-3 mb-20 mt-20">
       <div className="w-full max-w-7xl">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5">
           <span className="text-purple-400 font-bold">Contact </span>The Office

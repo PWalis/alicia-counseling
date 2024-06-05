@@ -11,13 +11,13 @@ export function Process() {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [windowWidth]);
 
-  const isSmallScreen = windowWidth < 768;
+  const isSmallScreen = windowWidth < 964;
 
   return (
     <section className="flex fade-bg bg-cover bg-center pt-[15rem] pb-48 w-full gap-5 items-center flex-col">
-      <div className="w-full max-w-7xl">
+      <div className="px-3 w-full max-w-7xl overflow-hidden">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5 text-white">
           Setting your
           <span className="font-bold"> Appointment</span>
@@ -32,17 +32,17 @@ export function Process() {
           <span className="">transparent.</span>{" "}
         </p>
       </div>
-      <div className="overflow-hidden pb-5 max-w-7xl w-full">
+      <div className="overflow-hidden pb-5 max-w-5xl w-full">
         <motion.div
           drag={isSmallScreen ? "x" : false}
           dragConstraints={{
-            left: -330,
-            right: 330,
+            left: -610,
+            right: 10,
           }}
-          animate={{
-            x: isSmallScreen ? "85%" : "0%",
-          }}
-          className="flex flex-row gap-3 sm:gap-12 justify-center items-center py-5"
+          // animate={{
+          //   x: isSmallScreen ? -100 : 0
+          // }}
+          className="flex flex-row justify-between items-center gap-3 sm:gap-none py-5 px-5"
         >
           <div className="shrink-0 shadow-[0_20px_#FFEC8D] sm:shadow-[-18px_18px_#FFEC8D] drop-shadow-md pt-5 pb-3 px-2 border bg-white border-gray-200 h-[400px] rounded-[20px] max-w-[320px] sm:max-w-[320px] flex flex-col justify-center items-center">
             <div className="w-24 h-24">
