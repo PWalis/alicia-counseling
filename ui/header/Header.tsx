@@ -55,7 +55,7 @@ export const Header = () => {
         </div>
         <div className="w-full sm:max-w-[45rem] flex justify-end items-center max-w-[5rem]">
           <div className="md:hidden z-10 absolute pr-3">
-            <Hamburger onToggle={handleToggle} />
+            <Hamburger onToggle={handleToggle} toggled={menuIsOpen} />
           </div>
           <motion.div
             variants={mobileMenuVariant}
@@ -77,10 +77,11 @@ export const Header = () => {
                 onClick={(e) => {
                   let aboutMe = document.getElementById("aboutMe");
                   e.preventDefault();
+                  setMenuIsOpen(false);
                   aboutMe &&
                     aboutMe.scrollIntoView({
                       behavior: "smooth",
-                      block: "center",
+                      block: "start",
                     });
                 }}
               >
@@ -91,10 +92,11 @@ export const Header = () => {
                 onClick={(e) => {
                   let services = document.getElementById("services");
                   e.preventDefault();
+                  setMenuIsOpen(false);
                   services &&
                     services.scrollIntoView({
                       behavior: "smooth",
-                      block: "center",
+                      block: "start",
                     });
                 }}
               >
@@ -105,10 +107,11 @@ export const Header = () => {
                 onClick={(e) => {
                   let pricing = document.getElementById("pricing");
                   e.preventDefault();
+                  setMenuIsOpen(false);
                   pricing &&
                     pricing.scrollIntoView({
                       behavior: "smooth",
-                      block: "center",
+                      block: "start",
                     });
                 }}
               >
@@ -117,20 +120,34 @@ export const Header = () => {
               <a
                 href="/"
                 onClick={(e) => {
-                  let aboutMe = document.getElementById("aboutMe");
+                  let faq = document.getElementById("faq");
                   e.preventDefault();
-                  aboutMe &&
-                    aboutMe.scrollIntoView({
+                  setMenuIsOpen(false);
+                  faq &&
+                    faq.scrollIntoView({
                       behavior: "smooth",
-                      block: "center",
+                      block: "start",
                     });
                 }}
               >
                 FAQ
               </a>
-              <button className="bg-white rounded-[15px] px-4 py-3 text-black uppercase font-medium">
+              <a
+                href="/"
+                onClick={(e) => {
+                  let contact = document.getElementById("contact");
+                  e.preventDefault();
+                  setMenuIsOpen(false);
+                  contact &&
+                    contact.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                }}
+                className="bg-white rounded-[15px] px-4 py-3 text-black uppercase font-medium"
+              >
                 Get in Touch
-              </button>
+              </a>
             </nav>
           </motion.div>
         </div>

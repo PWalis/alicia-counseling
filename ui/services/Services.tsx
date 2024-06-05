@@ -10,7 +10,7 @@ export function Services() {
   };
 
   const specializations: Record<string, string[]> = {
-    counseling: ["counseling 1"],
+    counseling: ["Counseling 1"],
     coaching: ["coaching 1"],
     groups: ["groups 1"],
   };
