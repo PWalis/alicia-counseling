@@ -7,6 +7,8 @@ import { Services } from "@/ui/services/Services";
 import { Pricing } from "@/ui/pricing/Pricing";
 import { FAQ } from "@/ui/faq/FAQ";
 import { Process } from "@/ui/process/Process";
+import { Contact } from "@/ui/contact/Contact";
+import { Footer } from "@/ui/footer/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       <Process />
       <Pricing />
       <FAQ />
+      <Contact />
+      <Footer />
     </main>
   );
 }
