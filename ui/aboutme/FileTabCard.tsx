@@ -36,7 +36,7 @@ export function FileTabCard() {
         duration: 0.15,
         ease: [0.74, 0, 0.19, 1.02],
       },
-      backgroundColor: "#FFEC8D",
+      backgroundColor: "#d1fae5",
     },
     nonActive: {
       y: "15%",
@@ -61,7 +61,7 @@ export function FileTabCard() {
           initial="active"
           animate={tab === "biography" ? "active" : "nonActive"}
           variants={tabVariants}
-          className="flex justify-center pt-1 w-full h-20 border border-1 border-gray-400 rounded-t-[20px] hover:cursor-pointer"
+          className="flex justify-center pt-1 w-full h-20 border border-1 border-gray-200 rounded-t-[20px] hover:cursor-pointer"
         >
           <p>Biography</p>
         </motion.div>
@@ -70,7 +70,7 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "background" ? "active" : "nonActive"}
           variants={tabVariants}
-          className="flex justify-center pt-1 w-full h-20 border border-1 border-gray-400  rounded-t-[20px] hover:cursor-pointer"
+          className="flex justify-center pt-1 w-full h-20 border border-1 border-gray-200  rounded-t-[20px] hover:cursor-pointer"
         >
           <p>Background</p>
         </motion.div>
@@ -79,7 +79,7 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "education" ? "active" : "nonActive"}
           variants={tabVariants}
-          className="flex justify-center pt-1 w-full h-20 border border-1 border-gray-400 bg-white rounded-t-[20px] hover:cursor-pointer"
+          className="flex justify-center pt-1 w-full h-20 border border-1 border-gray-200 bg-white rounded-t-[20px] hover:cursor-pointer"
         >
           <p>Education</p>
         </motion.div>
@@ -89,7 +89,7 @@ export function FileTabCard() {
           initial="active"
           animate={tab === "biography" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white shadow-custom2"
+          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-200 bg-white shadow-custom2 drop-shadow-md"
         >
           <h4 className="font-semibold">Hey y'all!</h4>
           <p className="font-semibold">
@@ -116,7 +116,7 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "education" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white shadow-custom2"
+          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-200 bg-white shadow-custom2 drop-shadow-md"
         >
           <p>
             I hold a Master’s Degree in Clinical Mental Health Counseling from
@@ -132,12 +132,12 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "background" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 sm:p-7 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-400 bg-white max-h-[550px] overflow-hidden shadow-custom2"
+          className="absolute p-3 sm:p-7 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-200 bg-white max-h-[550px] overflow-hidden shadow-custom2 drop-shadow-md"
           style={{
             scrollbarGutter: "stable",
           }}
         >
-          <div className="overflow-auto p-3 z-20">
+          <div className="overflow-auto px-8 z-20">
             <p>
               Aside from personal and lived experience with various aspects of
               mental health, I have been working in the world of mental health

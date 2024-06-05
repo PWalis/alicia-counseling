@@ -30,7 +30,7 @@ div::-webkit-scrollbar-track {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(82, 90, 105);
+  background-color: rgb(190, 190, 190);
   border-radius: 20px;
 }
 
@@ -70,3 +70,34 @@ div::-webkit-scrollbar-track {
     border-radius: 20px;
   }
 }
+
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #f9a8d4 0%, #fff3ff  51%, #ff6eaa  100%);
+  margin: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;         
+  display: block;
+}
+
+.btn-grad2 {
+  background-image: linear-gradient(to right, #93c5fd 0%, #f3f9ff  51%, #6eb2ff  100%);
+  margin: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;         
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.btn-grad2:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
