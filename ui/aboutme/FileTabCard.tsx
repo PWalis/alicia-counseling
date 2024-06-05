@@ -89,15 +89,15 @@ export function FileTabCard() {
           initial="active"
           animate={tab === "biography" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-200 bg-white shadow-custom2 drop-shadow-md"
+          className="absolute p-8 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-200 bg-white shadow-custom2 drop-shadow-md"
         >
           <h4 className="font-semibold">Hey y'all!</h4>
           <p className="font-semibold">
-            I am <span className="text-2xl text-pink-400">Alicia Wimsatt</span>,
+            I am <span className="text-2xl text-pink-400 tracking-wide">Alicia Wimsatt</span>,
           </p>
           <p>
             and I am an LPC Associate supervised by Shawna Storey-Lovin, LPC-S.
-            I am the Owner of Couch Talk Counseling and Coaching.
+            I am the Owner of <span className="font-semibold">Couch Talk Counseling and Coaching.</span>
           </p>
           <p>
             Aside from the fancy titles, I am a fellow Wise-Countian, boy mom x
@@ -116,15 +116,15 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "education" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-200 bg-white shadow-custom2 drop-shadow-md"
+          className="absolute p-8 sm:p-10 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-200 bg-white shadow-custom2 drop-shadow-md"
         >
           <p>
-            I hold a Master’s Degree in Clinical Mental Health Counseling from
-            Capella University where I graduated with distinction.
+            I hold a <span className="font-semibold">Master’s Degree in Clinical Mental Health Counseling </span> from
+            <span className="text-pink-400"> Capella University</span> where I graduated with distinction.
           </p>
           <p>
-            I completed my Bachelors Degree in Psychology and Bachelors Degree
-            in Child Learning and Development at the University of Texas at
+            I completed my <span className="font-semibold">Bachelors Degree in Psychology and Bachelors Degree
+            in Child Learning and Development</span> at the University of Texas at
             Dallas.
           </p>
         </motion.div>
@@ -132,23 +132,23 @@ export function FileTabCard() {
           initial="nonActive"
           animate={tab === "background" ? "active" : "nonActive"}
           variants={cardVariants}
-          className="absolute p-3 sm:p-7 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-200 bg-white max-h-[550px] overflow-hidden shadow-custom2 drop-shadow-md"
+          className="absolute p-8 sm:p-7 flex flex-col gap-4 rounded-[20px] border border-1 border-gray-200 bg-white max-h-[500px] overflow-hidden shadow-custom2 drop-shadow-md"
           style={{
             scrollbarGutter: "stable",
           }}
         >
-          <div className="overflow-auto px-8 z-20">
+          <div className="overflow-auto z-20 lg:pr-[40px]">
             <p>
-              Aside from personal and lived experience with various aspects of
-              mental health, I have been working in the world of mental health
-              since 2010 having initially spent 9 years working with individuals
+              <span className="font-semibold">Aside from personal and lived experience with various aspects of
+              mental health</span>, I have been working in the world of mental health
+              since 2010 having initially spent <span className="text-pink-400">9 years</span> working with individuals
               with intellectual and developmental disabilities, Autism, ADHD and
               their families/foster care providers with behavior modification,
               intervention, advocacy, and case management.
             </p>
             <p>
-              Through my personal experience and my 9 years of working with the
-              neurodivergent population, neurodivergence and neurodivergence
+              <span className="font-semibold">Through my personal experience and my 9 years of working with the
+              neurodivergent population</span>, <span className="text-pink-400">neurodivergence</span> and neurodivergence
               advocacy became a passion of mine. My background is not limited to
               neurodivergence however, as I have served as a local mental health
               crisis worker, worked with pervasive mental illness and within an
@@ -156,8 +156,8 @@ export function FileTabCard() {
               justice system.
             </p>
             <p>
-              In addition, along with my own advocacy efforts towards
-              neurodivergence, I have also provided Special Education Counseling
+              <span className="font-semibold">In addition, along with my own advocacy efforts towards
+              neurodivergence,</span> I have also provided Special Education Counseling
               in a school setting, been a counselor in a group practice, and now
               my road takes me to providing counseling to those in my local,
               rural, community. Additionally, I have served as a group leader
