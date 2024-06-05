@@ -2,7 +2,7 @@ import react from "react";
 
 export function Pricing() {
   return (
-    <section id='pricing' className="pricing-bg bg-center w-full bg-fill bg-no-repeat">
+    <section id='pricing' className="pricing-bg bg-center w-full bg-fill bg-no-repeat mt-20 mb-20">
       <div className=" px-3 flex flex-col  gap-10 justify-center items-center">
         <div className="w-full max-w-7xl">
           <h2 className="text-5xl font-light tracking-wider text-black ">

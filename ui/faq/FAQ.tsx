@@ -68,7 +68,7 @@ export function FAQ() {
   };
 
   return (
-    <section className="pt-16 px-3 flex flex-col justify-center items-center w-full mb-20">
+    <section className=" px-3 flex flex-col justify-center items-center w-full mb-20 mt-20">
       <div className="w-full max-w-7xl mb-10">
       <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5">
         Frequently Asked <span className="text-pink-500 font-bold">Questions</span>
