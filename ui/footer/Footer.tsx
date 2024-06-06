@@ -42,7 +42,7 @@ export function Footer() {
               />
             </svg>
           </div>
-          <div className="flex flex-col lg:justify-center lg:items-center gap-5">
+          <div className="flex flex-col lg:justify-center gap-5">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10">
                 <svg
@@ -67,7 +67,7 @@ export function Footer() {
                   </g>
                 </svg>
               </div>
-              <p> +1 (900) 999 9999</p>
+              <p> 302 Office Address, State Zip </p>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-10 h-10">
