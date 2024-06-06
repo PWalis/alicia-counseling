@@ -1,11 +1,14 @@
+import logo from "@/public/assets/logo.png";
+import Image from "next/image";
+
 export function Footer() {
   return (
-    <section className="w-full max-w-[1600px] bg-[#181818] text-white m-2 p-5 lg:p-10 rounded-[20px] mb-10">
-      <div className="flex flex-col lg:flex-row gap-10 w-full justify-center">
+    <section className="w-full max-w-[1600px] text-white m-2 lg:p-10  mb-10 px-2">
+      <div className="bg-[#181818] rounded-[20px] p-5  flex flex-col lg:flex-row gap-10 w-full justify-center">
         <div className="flex flex-col md:flex-row gap-10 w-full place-items-center lg:justify-start justify-center">
           <div className="flex flex-col item-center justify-center w-fit place-items-center">
             <div className="h-20 w-20 bg-gray-100 rounded-full items-center flex justify-center text-black mb-2">
-              logo
+              <Image alt="logo" src={logo} width={200} height={200}></Image>
             </div>
             <div className="flex flex-col justify-center items-center">
               <p className="text-bold text-xl font-extrabold tracking-wider uppercase">

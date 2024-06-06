@@ -25,11 +25,11 @@ export function Hero() {
           />
           <p className="text-left">Meet  <span className="font-bold"> Alicia, </span></p>
         </div>
-        <div className="z-10 pb-4 sm:pb-0 col-span-5 row-start-1 row-end-5 sm:col-start-2 sm:col-span-2 sm:row-start-3 sm:row-span-6 flex justify-center flex-col items-center pt-14 sm:p-5">
-          <h1 className=" text-4xl lg1/2:text-6xl xs:text-5xl sm:text-center text-white tracking-[.2em] font-light">
+        <div className="z-10 pb-4 sm:pb-0 col-span-5 row-start-1 row-end-5 sm:col-start-2 sm:col-span-2 sm:row-start-2 sm:row-span-6 flex justify-center flex-col items-center">
+          <h1 className=" px-3 text-4xl lg1/2:text-6xl text-2xl sm:text-center text-white tracking-[.2em] font-light">
             Your Mental Health <span className="font-extrabold text-5xl lg1/2:text-7xl">MATTERS.</span>
           </h1>
-          <p className="sm:text-center sm:max-w-[28rem] pt-2 text-white tracking-wide font-semibold">
+          <p className=" px-3 text-sm lg:text-md lg:font-semibold sm:text-center sm:max-w-[28rem] pt-2 text-white tracking-wide">
             I am here to help you flourish through my coaching, counseling or group specializations to make sure you get the treatment that you deserve.
           </p>
         </div>
@@ -43,7 +43,7 @@ export function Hero() {
             layout="responsive"
             style={{objectFit: "cover"}}
           />
-          <p className="text-center"> MS Mental Health Counseling </p>
+          <p className="text-center"> MS Clinical Mental Health Counseling </p>
         </div>
       </div>
     </section>
