@@ -12,7 +12,7 @@ export function AboutMe() {
         backgroundSize: "cover",
         backgroundPositionY: "center",
       }}
-      className="w-full  flex flex-wrap justify-center items-center pt-[15rem] px-3 flex-col gap-6 pb-[15rem]"
+      className="w-full  flex flex-wrap justify-center items-center pt-[15rem] px-3 flex-col gap-6 pb-[20rem] sm:pb-[15rem]"
     >
       <h2 className="max-w-7xl w-full text-5xl pt-12 mb-4 tracking-wider font-light text-center sm:text-left text-white">
         A little <span className="font-bold">About</span> Me
@@ -27,7 +27,7 @@ export function AboutMe() {
           />
           <div className="absolute inset-0 rounded-[20px] pointer-events-none shadow-custom drop-shadow-md"></div>
         </div>
-        <p className="mt-[2rem] sm:mt-[1.5rem] justify-end flex mr-2 sm:mr-10 text-sm tracking-wider">MS Clinical Mental Health Counseling</p>
+        <p className="mt-[2rem] sm:mt-[1.5rem] flex text-center justify-center ">MS Clinical Mental Health Counseling</p>
         </div>
         <FileTabCard />
       </div>

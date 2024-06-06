@@ -41,7 +41,7 @@ export const Header = () => {
       {/* <div className="pl-5 mb-2 h-5 w-full bg-white backdrop-blur-[15px] opacity-90 text-black flex items-center p-3 border-1 border-[#838383]">
         <p> In case of emergency please call 988</p>
       </div> */}
-      <div className="w-full flex justify-center max-w-[96rem] h-24 bg-[#181818c7] backdrop-blur-[15px] text-white rounded-[20px] mx-3 relative ">
+      <div className="w-full flex justify-center max-w-[96rem] h-24 opacity-95 bg-[#181818] backdrop-blur-[15px] text-white rounded-[20px] mx-3 relative ">
         <div className="w-full max-w-[45rem] flex items-center">
         <div className="h-16 w-16 bg-gray-100 rounded-full items-center flex justify-center text-black mr-3 ml-3">
               <Image alt="logo" src={logo} width={200} height={200}></Image>

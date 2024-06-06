@@ -147,8 +147,11 @@ export function Footer() {
           </div>
           <p className="max-w-[800px] text-sm font-light text-[#FFD1D1]">
             If you are in a life threatening situation, please call the
-            <span className="text-[#EA8B8B]"> Suicide and Crisis Lifeline</span>,
-            a free, 24-hour hotline, at 988. Your call will be routed to the
+            <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer" className="text-[#EA8B8B]">
+                {" "}
+                Suicide and Crisis Lifeline
+              </a>,
+            a free, 24-hour hotline, at <span className="text-[#EA8B8B]">988</span>. Your call will be routed to the
             crisis center near you. If your issue is an emergency, call
             <span className="text-[#EA8B8B]"> 911</span> or go to your nearest
             emergency room.
