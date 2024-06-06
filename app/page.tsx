@@ -9,6 +9,7 @@ import { FAQ } from "@/ui/faq/FAQ";
 import { Process } from "@/ui/process/Process";
 import { Contact } from "@/ui/contact/Contact";
 import { Footer } from "@/ui/footer/Footer";
+import { EmergencyBanner } from "@/ui/Banner/EmergencyBanner";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Pricing />
       <FAQ />
       <Contact />
+      <EmergencyBanner/>
       <Footer />
     </main>
   );
