@@ -85,10 +85,10 @@ export function Services() {
           Groups
         </button>
       </div>
-      <div className="flex flex-col gap-3 text-center justify-center pt-5 max-w-lg">
+      <div className="flex flex-col gap-3 justify-center pt-5 max-w-[500px] min-h-[200px]">
+      {service === "coaching" || service === "groups" ? <p className="text-blue-500 text-center text-xl"> Coming soon! </p> : ""}
         {specializations[service].map((specialization) => (
-          <p>{specialization}</p>
-        ))}
+          <p>{specialization}</p> ))}
       </div>
     </section>
   );
