@@ -27,7 +27,7 @@ export function Hero() {
           <h1 className=" px-3 text-4xl lg1/2:text-6xl sm:text-center text-white tracking-[.2em] font-light">
             Your Mental Health <span className="font-extrabold text-5xl lg1/2:text-7xl">MATTERS.</span>
           </h1>
-          <p className=" px-3 text-sm lg:text-md lg:font-semibold sm:text-center sm:max-w-[28rem] pt-2 text-white tracking-wide">
+          <p className=" px-3 text-sm lg:text-md lg:font-semibold sm:text-center sm:max-w-[28rem] pt-2 text-white tracking-wider">
             I am here to help you flourish through my coaching, counseling or group specializations to make sure you get the treatment that you deserve.
           </p>
         </div>
