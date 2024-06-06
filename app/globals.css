@@ -90,6 +90,15 @@ div::-webkit-scrollbar-track {
   display: block;
 }
 
+.btn-grad3 {
+  background-image: linear-gradient(to right, #ffffff 0%, #f3f9ff  51%, #9b55f7  100%);
+  margin: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;         
+  display: block;
+}
+
 .btn-grad:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
@@ -101,3 +110,24 @@ div::-webkit-scrollbar-track {
   text-decoration: none;
 }
 
+.btn-grad3:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+a:focus {  
+  outline: thin dotted;  
+}  
+a:hover, a:active {  
+  outline: 0;  
+}  
+a, a:visited, a:active {  
+  text-decoration: none;  
+  -webkit-transition: all .3s ease-in-out;  
+}  
+a:hover, .glow {  
+  color: #fff3ff;
+  text-shadow: 0 0 10px rgb(255, 255, 255);  
+}  
