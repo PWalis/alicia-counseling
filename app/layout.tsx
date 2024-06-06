@@ -8,6 +8,7 @@ const LexendDeca = Lexend_Deca({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Couch Talk Counseling and Coaching",
   description: "Mental health counseling and coaching",
+  themeColor: "rgb(47, 47, 47)",
 };
 export default function RootLayout({
   children,
