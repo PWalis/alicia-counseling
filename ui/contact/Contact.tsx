@@ -2,7 +2,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="flex w-full gap-5 items-center justify-center flex-col p-3 mb-20 mt-14"
+      className="flex w-full gap-5 items-center justify-center flex-col p-3 mb-20 pt-[8rem]"
     >
       <div className="w-full max-w-7xl">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5">

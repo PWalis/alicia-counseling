@@ -24,7 +24,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="pt-20 px-3 w-full items-center flex flex-col"
+      className="pt-[8rem] px-3 w-full items-center flex flex-col"
     >
       <div className="pb-10 w-full max-w-7xl">
         <h2 className="text-center sm:text-left text-5xl text-black font-light">
