@@ -31,8 +31,8 @@ export function Quotes() {
       opacity: 0,
       x: "-100%",
       transition: {
-        delay: 0.25,
-        duration: 0.63,
+        delay: 0,
+        duration: 0.2,
         ease: [0.74, 0, 0.19, 1.02],
       },
     },
@@ -40,8 +40,8 @@ export function Quotes() {
       opacity: 1,
       x: "0%",
       transition: {
-        delay: 0.25,
-        duration: 0.63,
+        delay: 0,
+        duration: 0.2,
         ease: [0.74, 0, 0.19, 1.02],
       },
     },
@@ -49,8 +49,8 @@ export function Quotes() {
       opacity: 0,
       x: "100%",
       transition: {
-        delay: 0.25,
-        duration: 0.63,
+        delay: 0,
+        duration: 0.2,
         ease: [0.74, 0, 0.19, 1.02],
       },
     },
@@ -59,7 +59,7 @@ export function Quotes() {
       x: "0%",
       transition: {
         delay: 0.35,
-        duration: 0.63,
+        duration: 0.2,
         ease: [0.74, 0, 0.19, 1.02],
       },
     },
@@ -98,10 +98,10 @@ export function Quotes() {
   return (
     <section
       ref={ref}
-      className="h-[200px] grid grid-cols-4 grid-rows-2 sm:grid-rows-1 sm:grid-cols-12 sm:flex-row sm:justify-between items-center max-w-7xl w-full"
+      className="h-[200px] flex flex-row sm:flex-row sm:justify-between items-center max-w-7xl w-full"
     >
       <button
-        className="hidden sm:block z-10 mx-auto col-start-2 w-fit sm:translate-x-0 row-start-2 sm:row-start-1 sm:col-start-1 hover:scale-105 active:scale-95"
+        className="hidden sm:block z-10 mx-auto col-start-2 w-fit row-start-2 hover:scale-105 active:scale-95"
         onClick={handlePrevious}
       >
         <svg
@@ -125,26 +125,53 @@ export function Quotes() {
           </g>
         </svg>
       </button>
-      <div className="h-full row-start-1 col-start-1 col-end-5 sm:col-start-2 sm:col-end-12 px-8 flex items-center justify-center w-full overflow-hidden">
-        <ul className="h-52 relative flex flex-row w-full justify-center">
+      <div className="h-full flex items-center justify-center w-full overflow-hidden px-10">
+        <motion.ul
+          drag={isSmallScreen ? "x" : false}
+          dragConstraints={{ left: 0, right: 0 }}
+          onDragEnd={onDragEnd}
+          style={{ x: dragX }}
+          className="h-52 relative flex flex-row w-full justify-center overflow-visible"
+        >
           {quotes.map((quote, index) => {
             return (
-              <SwipeableQuote
-                handleNext={handleNext}
-                handlePrevious={handlePrevious}
-                index={index}
-                isSmallScreen={isSmallScreen}
-                currentIndex={currentIndex}
-                quotesLength={quotes.length}
-                quote={quote}
+              <motion.li
+                key={index}
+                initial={"initial"}
+                animate={
+                  currentIndex === index
+                    ? "active"
+                    : (currentIndex > index &&
+                        currentIndex - index !== quotes.length - 1) ||
+                      index - currentIndex === quotes.length - 1
+                    ? "left"
+                    : "right"
+                }
                 variants={variants}
-              />
+                className={clsx(
+                  "absolute w-fit h-fit top-12 m-auto text-center text-4xl",
+                  currentIndex === index ? "active" : ""
+                )}
+              >
+                <div className="relative flex flex-row justify-center items-center">
+                  <span className="absolute -top-3 -left-6 text-6xl text-pink-600">
+                    "
+                  </span>
+                  {quote}
+                  <span className="absolute -right-7 -bottom-10 text-6xl text-pink-600">
+                    "
+                  </span>
+                  <p className="absolute -bottom-6 -right-7 text-sm text-right">
+                    - Alicia Wimsatt
+                  </p>
+                </div>
+              </motion.li>
             );
           })}
-        </ul>
+        </motion.ul>
       </div>
       <button
-        className="hidden sm:block z-10 mx-auto w-fit col-start-3 sm:-translate-x-0 row-start-2 sm:row-start-1 sm:col-start-12 hover:scale-105 active:scale-95"
+        className="hidden sm:block z-10 mx-auto w-fit hover:scale-105 active:scale-95"
         onClick={handleNext}
       >
         <svg
