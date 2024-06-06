@@ -3,9 +3,8 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useScroll, useTransform, useMotionValue } from "framer-motion";
 import useWindowDimensions from "@/lib/UseWindowDimensions";
 import clsx from "clsx";
-import { SwipeableQuote } from "./SwipeQuote";
 
-const DRAG_BUFFER = 50;
+const DRAG_BUFFER = 10;
 
 export function Quotes() {
   const { width } = useWindowDimensions();
