@@ -13,8 +13,12 @@ export function Services() {
     counseling: [
       "Counseling focuses on emotional healing and well-being to finally reveal the empowered version of yourself. In counseling you experience a journey of self-exploration that considers values, beliefs, interests, and memories to rediscover YOU. Counseling can only be provided by a licensed mental health professional.",
     ],
-    coaching: ["Coaching focuses on helping you achieve the goals that you've been struggling with. And ultimately gives you the skill building tool belt that you will support you for life. Coaching sessions take a supportive, encouraging approach so that you can develop skills, behaviors, and processes to reach your goals. Coaching sessions start in 2025"],
-    groups: ["Groups focus on bringing people on a similar journey together to support one another and take steps towards a better future. In group sessions you will meet peers and make connections that are difficult to discover during your normal day to day. The connections you make with your group sets you up for success. Group sessions start in 2025"],
+    coaching: [
+      "Coaching focuses on helping you achieve the goals that you've been struggling with. And ultimately gives you the skill building tool belt that you will support you for life. Coaching sessions take a supportive, encouraging approach so that you can develop skills, behaviors, and processes to reach your goals. Coaching sessions start in 2025",
+    ],
+    groups: [
+      "Groups focus on bringing people on a similar journey together to support one another and take steps towards a better future. In group sessions you will meet peers and make connections that are difficult to discover during your normal day to day. The connections you make with your group sets you up for success. Group sessions start in 2025",
+    ],
   };
 
   return (
@@ -30,7 +34,8 @@ export function Services() {
       </div>
       <div className="">
         <h3 className="text-center sm:text-left text-2xl pb-2">
-          What I <span className="text-blue-500 font-semibold"> Specialize </span>
+          What I{" "}
+          <span className="text-blue-500 font-semibold"> Specialize </span>
           In:
         </h3>
         <div className="max-w-6xl">
@@ -85,10 +90,15 @@ export function Services() {
           Groups
         </button>
       </div>
-      <div className="flex flex-col gap-3 justify-center pt-5 max-w-[500px] min-h-[200px]">
-      {service === "coaching" || service === "groups" ? <p className="text-blue-500 text-center text-xl"> Coming soon! </p> : ""}
+      <div className="flex flex-col gap-3 justify-center p-5 mt-3 max-w-[600px] min-h-[200px] bg-[#ffffff] rounded-[20px] drop-shadow-md">
+        {service === "coaching" || service === "groups" ? (
+          <p id='coming-soon' className="text-blue-500 text-center text-xl">Coming soon!</p>
+        ) : (
+          <p id='coming-soon' className=""></p>
+        )}
         {specializations[service].map((specialization) => (
-          <p>{specialization}</p> ))}
+          <p className="text-lg tracking-wide leading-20">{specialization}</p>
+        ))}
       </div>
     </section>
   );
