@@ -46,6 +46,7 @@ div::-webkit-scrollbar-track {
 }
 
 .pricing-bg {
+  background-position: 50% 75%;
   background-image: url(../public/assets/pricing_background.png);
 }
 
