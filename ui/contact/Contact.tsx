@@ -152,10 +152,7 @@ export function Contact() {
             <p className="text-pink-300 mt-2 mb-2 tracking-wide">
               Please call during business hours
             </p>
-            <a
-              href="tel:1234567890"
-              className="h-16 w-48 px-10 btn-grad rounded-[20px] drop-shadow-md"
-            >
+            <a href="tel:1234567890" className="h-16 w-48 px-10 pt-5 btn-grad rounded-[20px] flex items-center justify-center drop-shadow-md">
               Call My Office
             </a>
           </div>

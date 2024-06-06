@@ -25,12 +25,12 @@ export function Services() {
       <div className="pb-10 w-full max-w-7xl">
         <h2 className="text-center sm:text-left text-5xl text-black font-light">
           Personalize Your
-          <span className="font-bold text-blue-500">Couch Talk</span>
+          <span className="font-bold text-blue-500"> Couch Talk</span>
         </h2>
       </div>
       <div className="">
         <h3 className="text-center sm:text-left text-2xl pb-2">
-          What I <span className="text-blue-500 font-semibold">Specialize</span>
+          What I <span className="text-blue-500 font-semibold"> Specialize </span>
           In:
         </h3>
         <div className="max-w-6xl">
@@ -85,10 +85,10 @@ export function Services() {
           Groups
         </button>
       </div>
-      <div className="flex flex-col gap-3 text-center justify-center pt-5 max-w-lg">
-        {specializations[service].map((specialization, index) => (
-          <p key={index}>{specialization}</p>
-        ))}
+      <div className="flex flex-col gap-3 justify-center pt-5 max-w-[500px] min-h-[200px]">
+      {service === "coaching" || service === "groups" ? <p className="text-blue-500 text-center text-xl"> Coming soon! </p> : ""}
+        {specializations[service].map((specialization) => (
+          <p>{specialization}</p> ))}
       </div>
     </section>
   );

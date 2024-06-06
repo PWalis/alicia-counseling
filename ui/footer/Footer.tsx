@@ -42,7 +42,7 @@ export function Footer() {
               />
             </svg>
           </div>
-          <div className="flex flex-col lg:justify-center lg:items-center gap-5">
+          <div className="flex flex-col lg:justify-center gap-5">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10">
                 <svg
@@ -67,7 +67,7 @@ export function Footer() {
                   </g>
                 </svg>
               </div>
-              <p> +1 (900) 999 9999</p>
+              <p> 302 Office Address, State Zip </p>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-10 h-10">
@@ -147,10 +147,10 @@ export function Footer() {
           </div>
           <p className="max-w-[800px] text-sm font-light text-[#FFD1D1]">
             If you are in a life threatening situation, please call the
-            <span className="text-[#EA8B8B]">Suicide and Crisis Lifeline</span>,
+            <span className="text-[#EA8B8B]"> Suicide and Crisis Lifeline</span>,
             a free, 24-hour hotline, at 988. Your call will be routed to the
             crisis center near you. If your issue is an emergency, call
-            <span className="text-[#EA8B8B]">911</span> or go to your nearest
+            <span className="text-[#EA8B8B]"> 911</span> or go to your nearest
             emergency room.
           </p>
         </div>
