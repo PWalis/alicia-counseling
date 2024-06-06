@@ -58,7 +58,7 @@ export function EmergencyBanner() {
         animate={{ y: 0 }}
         exit={{ y: "100vh" }}
         transition={{ duration: 0.5 }}
-        className="fixed bottom-0 text-sm left-0 w-full bg-[#181818] text-[#FFD1D1] py-4 px-6 flex justify-center items-center z-20"
+        className="fixed bottom-0 text-sm left-0 w-full bg-[#181818] text-[#FFD1D1] py-4 px-6 flex justify-center items-center z-50"
       >
           <div className="flex flex-col md:flex-row-reverse items-center gap-3">
             <div className="">
