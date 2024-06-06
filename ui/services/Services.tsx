@@ -109,15 +109,6 @@ export function Services() {
         </div>
         {service === "counseling" && (
           <>
-            <motion.div
-              initial="collapsed"
-              animate="open"
-              variants={{
-                open: { opacity: 1, height: "auto" },
-                collapsed: { opacity: 0, height: 0 },
-              }}
-              transition={{ duration: 0.2 }}
-            >
               {specializations[service].map((specialization, index) => (
                 <p
                   key={index}
@@ -126,7 +117,6 @@ export function Services() {
                   {specialization}
                 </p>
               ))}
-            </motion.div>
           </>
         )}
         <div
@@ -167,15 +157,6 @@ export function Services() {
         </div>
         {service === "coaching" && (
           <>
-            <motion.div
-              initial="collapsed"
-              animate="open"
-              variants={{
-                open: { opacity: 1, height: "auto" },
-                collapsed: { opacity: 0, height: 0 },
-              }}
-              transition={{ duration: 0.2 }}
-            >
               <p
                 id="coming-soon"
                 className="text-blue-500 text-center text-xl pt-4 sm:hidden"
@@ -190,7 +171,6 @@ export function Services() {
                   {specialization}
                 </p>
               ))}
-            </motion.div>
           </>
         )}{" "}
         <div
@@ -249,15 +229,6 @@ export function Services() {
         </div>
         {service === "groups" && (
           <>
-            <motion.div
-              initial="collapsed"
-              animate="open"
-              variants={{
-                open: { opacity: 1, height: "auto" },
-                collapsed: { opacity: 0, height: 0 },
-              }}
-              transition={{ duration: 0.2 }}
-            >
               <p
                 id="coming-soon"
                 className="text-blue-500 text-center text-xl pt-4 sm:hidden sm:w-0"
@@ -272,7 +243,6 @@ export function Services() {
                   {specialization}
                 </p>
               ))}
-            </motion.div>
           </>
         )}
       </div>
@@ -283,7 +253,7 @@ export function Services() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2 }}
       >
-        <div className=" flex-col gap-3 justify-center p-5 mt-3 max-w-[600px] min-h-[200px] bg-[#ffffff] rounded-[20px] drop-shadow-md hidden sm:flex">
+        <div className="flex-col gap-3 justify-center p-5 mt-3 max-w-[600px] min-h-[200px] md:min-h-[250px] bg-[#ffffff] rounded-[20px] drop-shadow-md hidden sm:flex">
           {service === "coaching" || service === "groups" ? (
             <p id="coming-soon" className="text-blue-500 text-center text-xl">
               Coming soon!
