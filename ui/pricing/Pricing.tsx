@@ -1,5 +1,3 @@
-import react from "react";
-
 export function Pricing() {
   return (
     <section id='pricing' className="pricing-bg bg-center w-full bg-fill bg-no-repeat mt-20 mb-20">
