@@ -12,8 +12,8 @@ export function Contact() {
       <div className="flex flex-col sm:flex-row px-3 items-center gap-10 w-full justify-center">
         <div className="flex flex-col w-full max-w-[400px] place-content-center justify-center items-center">
           <div className="flex flex-col items-center text-center mb-10">
-            <div className="flex justify-center items-center text-center h-16 w-16 rounded-full">
-            <svg
+            <div className="h-16 w-16 rounded-full">
+              <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ export function Contact() {
         </div>
         <div className="flex flex-col w-full max-w-[400px] place-content-center justify-center items-center">
           <div className="flex flex-col items-center text-center mb-10">
-            <div className="flex justify-center items-center text-center h-16 w-16">
+            <div className="h-16 w-16">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
