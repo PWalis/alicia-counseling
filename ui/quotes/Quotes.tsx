@@ -1,6 +1,5 @@
 "use client";
-import react, { useEffect, useState, useRef } from "react";
-import Image from "next/image";
+import { useEffect, useState, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import clsx from "clsx";
 import useWindowDimensions from "@/lib/UseWindowDimensions";

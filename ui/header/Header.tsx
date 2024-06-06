@@ -1,15 +1,15 @@
 "use client";
-import react, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { Turn as Hamburger } from "hamburger-react";
 import clsx from "clsx";
-import { motion, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import useWindowDimensions from "@/lib/UseWindowDimensions";
 import logo from "@/public/assets/logo.png";
 
 export const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const handleToggle = () => {
     setMenuIsOpen(!menuIsOpen);
