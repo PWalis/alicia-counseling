@@ -1,7 +1,7 @@
 
 export function ClinicalApproach() {
   return (
-    <section className="flex w-full gap-5 items-center flex-col p-3 mb-20">
+    <section className="flex w-full gap-5 items-center flex-col p-3 pt-[8rem] mb-20">
       <div className="w-full max-w-7xl">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5">My Clinical <span className="text-purple-500 font-bold">Approach</span></h2>
       </div>
