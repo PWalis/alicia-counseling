@@ -86,8 +86,8 @@ export function Services() {
         </button>
       </div>
       <div className="flex flex-col gap-3 text-center justify-center pt-5 max-w-lg">
-        {specializations[service].map((specialization) => (
-          <p>{specialization}</p>
+        {specializations[service].map((specialization, index) => (
+          <p key={index}>{specialization}</p>
         ))}
       </div>
     </section>

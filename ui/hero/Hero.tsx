@@ -20,7 +20,6 @@ export function Hero() {
             width={300}
             height={400}
             style={{objectFit: "cover"}}
-            layout="responsive"
           />
           <p className="text-left">Meet  <span className="font-bold"> Alicia, </span></p>
         </div>
@@ -39,7 +38,6 @@ export function Hero() {
             src={pic4}
             width={300}
             height={400}
-            layout="responsive"
             style={{objectFit: "cover"}}
           />
           <p className="text-center"> MS Clinical Mental Health Counseling </p>
