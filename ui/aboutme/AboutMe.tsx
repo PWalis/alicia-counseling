@@ -12,7 +12,7 @@ export function AboutMe() {
         backgroundSize: "cover",
         backgroundPositionY: "center",
       }}
-      className="w-full  flex flex-wrap justify-center items-center pt-[15rem] px-3 flex-col gap-6 pb-[20rem] sm:pb-[15rem]"
+      className="w-full  flex flex-wrap justify-center items-center pt-[8rem] px-3 flex-col gap-6 pb-[18rem] sm:pb-[15rem]"
     >
       <h2 className="max-w-7xl w-full text-5xl pt-12 mb-4 tracking-wider font-light text-center sm:text-left text-white">
         A little <span className="font-bold">About</span> Me

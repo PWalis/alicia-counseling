@@ -2,7 +2,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="flex w-full gap-5 items-center justify-center flex-col p-3 mb-20 mt-20"
+      className="flex w-full gap-5 items-center justify-center flex-col p-3 mb-20 pt-[8rem]"
     >
       <div className="w-full max-w-7xl">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5">
@@ -12,7 +12,7 @@ export function Contact() {
       <div className="flex flex-col sm:flex-row px-3 items-center gap-10 w-full justify-center">
         <div className="flex flex-col w-full max-w-[400px] place-content-center justify-center items-center">
           <div className="flex flex-col items-center text-center mb-10">
-            <div className="flex justify-center items-center text-center h-16 w-16 rounded-full">
+            <div className="h-16 w-16 rounded-full">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -79,7 +79,7 @@ export function Contact() {
         </div>
         <div className="flex flex-col w-full max-w-[400px] place-content-center justify-center items-center">
           <div className="flex flex-col items-center text-center mb-10">
-            <div className="flex justify-center items-center text-center h-16 w-16">
+            <div className="h-16 w-16">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"

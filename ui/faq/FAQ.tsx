@@ -193,7 +193,7 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="px-3 flex flex-col justify-center items-center w-full mb-20 mt-20"
+      className="px-3 flex flex-col justify-center items-center w-full mb-20 pt-[8rem]"
     >
       <div className="w-full max-w-7xl mb-10">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5">
