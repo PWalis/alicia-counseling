@@ -25,7 +25,7 @@ export function Process() {
           <span className="">transparent.</span>{" "}
         </p>
       </div>
-      <div className="w-screen overflow-hidden">
+      <div className="w-full overflow-hidden">
         <motion.div
           drag={isSmallScreen ? "x" : false}
           dragConstraints={{
@@ -35,7 +35,7 @@ export function Process() {
           animate={{
             x: isSmallScreen ? 320 : 0
           }}
-          className="flex flex-row justify-center items-center gap-3 sm:gap-10 py-5 px-5 hover:cursor-grab active:cursor-grabbing select-none"
+          className="flex flex-row justify-center items-center gap-3 sm:gap-10 py-5 px-5 select-none"
         >
           <div className="shrink-0 shadow-[0_20px_#FFEC8D] sm:shadow-[-18px_18px_#FFEC8D] drop-shadow-md pt-5 pb-3 px-2 border bg-white border-gray-200 h-[400px] rounded-[20px] max-w-[320px] sm:max-w-[320px] flex flex-col justify-center items-center">
             <div className="w-24 h-24">
