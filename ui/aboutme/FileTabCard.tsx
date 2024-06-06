@@ -136,7 +136,7 @@ export function FileTabCard() {
             scrollbarGutter: "stable",
           }}
         >
-          <div className="overflow-auto z-20 lg:pr-[40px]">
+          <div className="overflow-auto z-20 pr-[10px] lg:pr-[40px]">
             <p>
               <span className="font-semibold">Aside from personal and lived experience with various aspects of
               mental health</span>, I have been working in the world of mental health

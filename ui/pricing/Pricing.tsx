@@ -1,13 +1,13 @@
 export function Pricing() {
   return (
-    <section id='pricing' className="pricing-bg bg-center w-full bg-fill bg-no-repeat pt-[8rem] mb-20">
+    <section id='pricing' className="pricing-bg w-full bg-fill bg-no-repeat pt-[8rem] mb-20">
       <div className=" px-3 flex flex-col  gap-10 justify-center items-center">
         <div className="w-full max-w-7xl">
           <h2 className="text-5xl font-light tracking-wider text-black ">
             My <span className="font-bold text-teal-500"> Pricing </span>
           </h2>
         </div>
-        <div className="text-center text-black  tracking-wide mx-auto text-[18px] max-w-[700px]">
+        <div className="text-center text-black  tracking-wide mx-auto text-[18px] max-w-[700px] mb-6">
           <p>
             I want to <span className="font-bold">empower </span>as many people
             as possible, which is why I keep my pricing very{" "}
