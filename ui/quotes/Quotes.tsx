@@ -18,11 +18,27 @@ export function Quotes() {
   const startAnimation = useTransform(scrollYProgress, [0, 1], [0, 1]);
   const isSmallScreen = width <= 640 ? true : false;
   const quotes = [
-    "One day, or day one",
-    "Just do it",
-    "I'm lovin it",
-    "LETS GO BABY!!!!",
-    "Lorem ipsum dolor, sit amet consectetur.",
+    ["What IF I don’t what IF today?", "Alicia Wimsatt"],
+    [
+      "My job as your therapist is to work myself out of a job, when therapists are no longer needed. Could you imagine a world where mental health is acknowledged,societal expectations are not generalized, there is no longer a negative stigma, and you come equipped with the tools and skills you need to take on those challenges? Imagine that world and fight for it!",
+      "Alicia Wimsatt",
+    ],
+    [
+      "Let go of who you think you’re supposed to be; embrace who you are.",
+      "Brene Brown",
+    ],
+    [
+      "Being comfortable in a state of struggle can often times feel easier than the fight to emotional freedom.",
+      "Alicia Wimsatt",
+    ],
+    [
+      "The word Normal is defined as conforming to a standard. Now, define YOUR NORMAL? There is no “Normal” when it comes to your trauma, your thoughts, your feelings, and your fears. Not a single person has lived it like you have lived it. Make your new standard and make your new NORMAL because you don’t have to sit where society expects you to be.",
+      "Alicia Wimsatt",
+    ],
+    [
+      "ADHD is not about knowing what to do, but about doing what one knows.",
+      "Dr. Russell Barkley",
+    ],
   ];
 
   const variants = {
@@ -97,7 +113,7 @@ export function Quotes() {
   return (
     <section
       ref={ref}
-      className="h-[200px] flex flex-row sm:flex-row sm:justify-between items-center max-w-7xl w-full"
+      className="flex h-[850px] md:h-[700px] lg:h-[500px] flex-row sm:flex-row sm:justify-between items-center max-w-7xl w-full overflow-hidden"
     >
       <button
         className="hidden sm:block z-10 mx-auto col-start-2 w-fit row-start-2 hover:scale-105 active:scale-95"
@@ -124,13 +140,13 @@ export function Quotes() {
           </g>
         </svg>
       </button>
-      <div className="h-full flex items-center justify-center w-full overflow-hidden px-10">
+      <div className="h-full flex w-full px-10">
         <motion.ul
           drag={isSmallScreen ? "x" : false}
           dragConstraints={{ left: 0, right: 0 }}
           onDragEnd={onDragEnd}
           style={{ x: dragX }}
-          className="h-52 relative flex flex-row w-full justify-center overflow-visible"
+          className="relative flex flex-row w-full justify-center overflow-visible"
         >
           {quotes.map((quote, index) => {
             return (
@@ -148,20 +164,22 @@ export function Quotes() {
                 }
                 variants={variants}
                 className={clsx(
-                  "absolute w-fit h-fit top-12 m-auto text-center text-4xl",
+                  "absolute w-full h-full top-0 m-auto text-left text-3xl lg:text-4xl",
                   currentIndex === index ? "active" : ""
                 )}
               >
-                <div className="relative flex flex-row justify-center items-center">
-                  <span className="absolute -top-3 -left-6 text-6xl text-pink-600">
-                    "
-                  </span>
-                  {quote}
-                  <span className="absolute -right-7 -bottom-10 text-6xl text-pink-600">
-                    "
-                  </span>
-                  <p className="absolute -bottom-6 -right-7 text-sm text-right">
-                    - Alicia Wimsatt
+                <div className="flex h-full flex-row justify-center items-center">
+                  <p className="relative">
+                    <span className="absolute -top-3 -left-7 sm:-left-10 text-6xl text-pink-600">
+                      "
+                    </span>
+                    {quote[0]}
+                    <span className="absolute right-0 sm:-right-7 -bottom-10 text-6xl text-pink-600">
+                      "
+                    </span>
+                    <span className="absolute -bottom-10 -right-5 sm:-right-7 text-sm text-right">
+                      - {quote[1]}
+                    </span>
                   </p>
                 </div>
               </motion.li>
