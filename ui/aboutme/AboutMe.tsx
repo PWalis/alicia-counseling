@@ -25,9 +25,9 @@ export function AboutMe() {
             alt="about-me-image"
             src={pic1}
           />
-          <div className="absolute inset-0 rounded-[20px] pointer-events-none shadow-custom drop-shadow-md"></div>
+          <div className="absolute inset-0 rounded-[20px] pointer-events-none shadow-custom"></div>
         </div>
-        <p className="mt-[2rem] sm:mt-[1.5rem] flex text-center justify-center ">MS Clinical Mental Health Counseling</p>
+        {/* <p className="mt-[2.5rem] sm:mt-[1.5rem] flex text-center justify-center font-semibold tracking-wide">MS Clinical Mental Health Counseling</p> */}
         </div>
         <FileTabCard />
       </div>

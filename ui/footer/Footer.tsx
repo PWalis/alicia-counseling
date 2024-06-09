@@ -1,3 +1,4 @@
+"use client";
 import logo from "@/public/assets/logo.png";
 import Image from "next/image";
 
@@ -102,29 +103,105 @@ export function Footer() {
             <div className="text-[#ACFCD9]">
               <ul>
                 <li className="text-white font-medium pb-2 pt-2">
-                  <a href="">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="">About Me</a>
+                  <a
+                    href="/"
+                    onClick={(e) => {
+                      let aboutMe = document.getElementById("aboutMe");
+                      e.preventDefault();
+                      aboutMe &&
+                        aboutMe.scrollIntoView({
+                          block: "start",
+                          behavior: "smooth",
+                        });
+                    }}
+                  >
+                    About Me
+                  </a>
                 </li>
                 <li>
-                  <a href="">Services</a>
+                  <a
+                    href="/"
+                    onClick={(e) => {
+                      let services = document.getElementById("services");
+                      e.preventDefault();
+                      services &&
+                        services.scrollIntoView({
+                          behavior: "smooth",
+                          block: "start",
+                        });
+                    }}
+                  >
+                    Services
+                  </a>
                 </li>
                 <li>
-                  <a href="">Pricing</a>
+                  <a
+                    href="/"
+                    onClick={(e) => {
+                      let pricing = document.getElementById("pricing");
+                      e.preventDefault();
+                      pricing &&
+                        pricing.scrollIntoView({
+                          behavior: "smooth",
+                          block: "start",
+                        });
+                    }}
+                  >
+                    Pricing
+                  </a>
                 </li>
               </ul>
             </div>
             <div className="pt-10 text-[#ACFCD9]">
               <ul>
                 <li>
-                  <a href="">FAQ</a>
+                  <a
+                    href="/"
+                    onClick={(e) => {
+                      let faq = document.getElementById("faq");
+                      e.preventDefault();
+                      faq &&
+                        faq.scrollIntoView({
+                          behavior: "smooth",
+                          block: "start",
+                        });
+                    }}
+                  >
+                    FAQ
+                  </a>
                 </li>
                 <li>
-                  <a href="">My Process</a>
+                  <a                     href="/"
+                    onClick={(e) => {
+                      let process = document.getElementById("process");
+                      e.preventDefault();
+                      process &&
+                        process.scrollIntoView({
+                          behavior: "smooth",
+                          block: "start",
+                        });
+                    }}
+                  >
+                    My Process</a>
                 </li>
                 <li>
-                  <a href="">Contact Office</a>
+                  <a
+                    href="/"
+                    onClick={(e) => {
+                      let contact = document.getElementById("contact");
+                      e.preventDefault();
+                      contact &&
+                        contact.scrollIntoView({
+                          behavior: "smooth",
+                          block: "start",
+                        });
+                    }}
+                  >
+                    Contact Office
+                  </a>
                 </li>
               </ul>
             </div>
@@ -134,25 +211,32 @@ export function Footer() {
                   <a href="">Emergencies</a>
                 </li>
                 <li>
-                  <a href="">Suicide Lifeline</a>
-                </li>
-                <li>
-                  <a href="">Hotline Number</a>
-                </li>
-                <li>
-                  <a href="">Emergency Number</a>
+                  <a
+                    href="https://988lifeline.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Suicide Lifeline
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
           <p className="max-w-[800px] text-sm font-light text-[#FFD1D1]">
             If you are in a life threatening situation, please call the
-            <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer" className="text-[#EA8B8B]">
-                {" "}
-                Suicide and Crisis Lifeline
-              </a>,
-            a free, 24-hour hotline, at <span className="text-[#EA8B8B]">988</span>. Your call will be routed to the
-            crisis center near you. If your issue is an emergency, call
+            <a
+              href="https://988lifeline.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#EA8B8B]"
+            >
+              {" "}
+              Suicide and Crisis Lifeline
+            </a>
+            , a free, 24-hour hotline, at{" "}
+            <span className="text-[#EA8B8B]">988</span>. Your call will be
+            routed to the crisis center near you. If your issue is an emergency,
+            call
             <span className="text-[#EA8B8B]"> 911</span> or go to your nearest
             emergency room.
           </p>

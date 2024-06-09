@@ -46,6 +46,7 @@ div::-webkit-scrollbar-track {
 }
 
 .pricing-bg {
+  background-position: 50% 75%;
   background-image: url(../public/assets/pricing_background.png);
 }
 
@@ -107,7 +108,7 @@ div::-webkit-scrollbar-track {
     to right,
     #ffffff 0%,
     #f3f9ff 51%,
-    #9b55f7 100%
+    #b432ff 100%
   );
   margin: 10px;
   text-align: center;
@@ -150,4 +151,8 @@ a:hover,
 .glow {
   color: #fff3ff;
   text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+a:focus {
+  outline:0;
 }

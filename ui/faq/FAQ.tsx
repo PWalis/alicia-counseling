@@ -201,7 +201,7 @@ export function FAQ() {
           <span className="text-pink-500 font-bold">Questions</span>
         </h2>
       </div>
-      <div className="flex flex-col md:flex-row sm:gap-10 md:gap-20 w-full max-w-lg md:max-w-full justify-center">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-20 w-full max-w-lg md:max-w-full justify-center">
         <div className="sm:w-[500px] sm:min-w-[400px] max-h-[406px] border border-gray-200 rounded-[20px] px-6 py-6 flex flex-col gap-3 drop-shadow-md bg-white">
           {Object.keys(topicTitles).map((key) => (
             <button

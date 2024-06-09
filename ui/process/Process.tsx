@@ -9,7 +9,7 @@ export function Process() {
   const isSmallScreen = width < 964;
 
   return (
-    <section className="flex fade-bg bg-cover bg-bottom pt-[16rem] pb-[7rem] sm:pb-[15rem] w-full gap-5 items-center flex-col">
+    <section id="process" className="flex fade-bg bg-cover bg-center pt-[16rem] pb-[7rem] sm:pb-[15rem] w-full gap-5 items-center flex-col">
       <div className="px-3 w-full max-w-7xl overflow-hidden">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5 text-white">
           Setting your
@@ -35,7 +35,7 @@ export function Process() {
           animate={{
             x: isSmallScreen ? 320 : 0
           }}
-          className="flex flex-row justify-center items-center gap-3 sm:gap-10 py-5 px-5 select-none"
+          className="flex flex-row justify-center items-center gap-3 sm:gap-10 py-5 px-5 select-none mb-40"
         >
           <div className="shrink-0 shadow-[0_20px_#FFEC8D] sm:shadow-[-18px_18px_#FFEC8D] drop-shadow-md pt-5 pb-3 px-2 border bg-white border-gray-200 h-[400px] rounded-[20px] max-w-[320px] sm:max-w-[320px] flex flex-col justify-center items-center">
             <div className="w-24 h-24">
@@ -174,7 +174,7 @@ export function Process() {
                 FAQ &&
                   FAQ.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="pt-10 text-xl text-[#66aeff]"
+              className="pt-10 text-xl text-[#66aeff] hover:text-gray-300"
             >
               View FAQ
             </a>
