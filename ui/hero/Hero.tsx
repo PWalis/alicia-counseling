@@ -10,7 +10,9 @@ export function Hero() {
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       backgroundPositionY: "bottom",
-    }} className="w-full flex justify-center">
+    }} 
+    id="home"
+    className="w-full flex justify-center">
       <div className="grid pt-[3.5rem] sm:pt-36 pb-36 grid-cols-5 grid-rows-10 sm:grid-cols-4 sm:grid-rows-12 p-5 max-w-7xl max-h-max">
         <div className="col-start-1 col-end-4 row-start-4 row-end-8 row-span-4 sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-7">
           <Image

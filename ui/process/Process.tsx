@@ -9,7 +9,7 @@ export function Process() {
   const isSmallScreen = width < 964;
 
   return (
-    <section className="flex fade-bg bg-cover bg-center pt-[16rem] pb-[7rem] sm:pb-[15rem] w-full gap-5 items-center flex-col">
+    <section id="process" className="flex fade-bg bg-cover bg-center pt-[16rem] pb-[7rem] sm:pb-[15rem] w-full gap-5 items-center flex-col">
       <div className="px-3 w-full max-w-7xl overflow-hidden">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5 text-white">
           Setting your
@@ -174,7 +174,7 @@ export function Process() {
                 FAQ &&
                   FAQ.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="pt-10 text-xl text-[#66aeff]"
+              className="pt-10 text-xl text-[#66aeff] hover:text-gray-300"
             >
               View FAQ
             </a>
