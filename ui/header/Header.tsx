@@ -39,7 +39,15 @@ export const Header = () => {
   return (
     <header className="w-full flex-col flex items-center z-30 fixed top-2 px-2">
       <div className="w-full flex justify-center max-w-[96rem] h-24 bg-[#181818c7] backdrop-blur-[15px] text-white rounded-[20px] mx-3 relative ">
-        <div className="w-full max-w-[45rem] flex items-center">
+        <a
+          href="/"
+          onClick={(e) => {
+            let home = document.getElementById("home");
+            e.preventDefault();
+            home && home.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
+          className="w-full max-w-[45rem] flex items-center"
+        >
           <div className="h-16 w-16 bg-gray-100 rounded-full items-center flex justify-center text-black mr-3 ml-3">
             <Image alt="logo" src={logo} width={200} height={200}></Image>
           </div>
@@ -51,7 +59,7 @@ export const Header = () => {
               Counseling and Coaching
             </p>
           </div>
-        </div>
+        </a>
         <div className="w-full sm:max-w-[45rem] flex justify-end items-center max-w-[5rem]">
           <div className="lg1/2:hidden z-10 absolute pr-3">
             <Hamburger onToggle={handleToggle} toggled={menuIsOpen} />
@@ -80,7 +88,10 @@ export const Header = () => {
                   e.preventDefault();
                   setMenuIsOpen(false);
                   aboutMe &&
-                    aboutMe.scrollIntoView({ block: "start", behavior: "smooth" });
+                    aboutMe.scrollIntoView({
+                      block: "start",
+                      behavior: "smooth",
+                    });
                 }}
               >
                 About Me
@@ -115,6 +126,20 @@ export const Header = () => {
                 }}
               >
                 Pricing
+              </a>
+              <a
+                href="/"
+                onClick={(e) => {
+                  let process = document.getElementById("process");
+                  e.preventDefault();
+                  process &&
+                    process.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                }}
+              >
+                My Process
               </a>
               <a
                 href="/"
