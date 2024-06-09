@@ -101,14 +101,14 @@ export function Quotes() {
     dragX.set(0);
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (startAnimation.get() > 0) {
-  //       handleNext();
-  //     }
-  //   }, 6000);
-  //   return () => clearInterval(interval);
-  // }, [currentIndex, startAnimation]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (startAnimation.get() > 0) {
+        handleNext();
+      }
+    }, 6000);
+    return () => clearInterval(interval);
+  }, [currentIndex, startAnimation]);
 
   return (
     <section
@@ -177,7 +177,7 @@ export function Quotes() {
                     <span className="absolute right-0 sm:-right-7 -bottom-10 text-6xl text-pink-600">
                       "
                     </span>
-                    <span className="absolute -bottom-10 -right-7 text-sm text-right">
+                    <span className="absolute -bottom-10 -right-5 sm:-right-7 text-sm text-right">
                       - {quote[1]}
                     </span>
                   </p>
