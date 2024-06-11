@@ -115,6 +115,20 @@ export const Header = () => {
               <a
                 href="/"
                 onClick={(e) => {
+                  let process = document.getElementById("process");
+                  e.preventDefault();
+                  process &&
+                    process.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                }}
+              >
+                My Process
+              </a>
+              <a
+                href="/"
+                onClick={(e) => {
                   let pricing = document.getElementById("pricing");
                   e.preventDefault();
                   setMenuIsOpen(false);
@@ -126,20 +140,6 @@ export const Header = () => {
                 }}
               >
                 Pricing
-              </a>
-              <a
-                href="/"
-                onClick={(e) => {
-                  let process = document.getElementById("process");
-                  e.preventDefault();
-                  process &&
-                    process.scrollIntoView({
-                      behavior: "smooth",
-                      block: "start",
-                    });
-                }}
-              >
-                My Process
               </a>
               <a
                 href="/"
