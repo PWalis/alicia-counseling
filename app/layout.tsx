@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Lexend_Deca } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/ui/header/Header";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 const LexendDeca = Lexend_Deca({ subsets: ["latin"] });
 
@@ -22,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={LexendDeca.className}>
         <Header />
+        <SpeedInsights />
         {children}
       </body>
     </html>
