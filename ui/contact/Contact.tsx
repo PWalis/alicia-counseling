@@ -36,10 +36,10 @@ export function Contact() {
               </svg>
             </div>
             <h3 className=" font-semibold text-purple-400 text-lg">Location</h3>
-            <p className="">302 Office Address, State Zip</p>
+            <p className="">100 W. Walnut Street, Decatur, Texas 76234</p>
           </div>
-          <div className="w-full h-[370px] border rounded-[25px] p-10 bg-white drop-shadow-md">
-            <div className="h-20 w-20 mb-10 rounded-xl bg-gray-100 p-2">
+          <div className="w-full h-[425px] flex flex-col justify-between border rounded-[25px] p-10 bg-white drop-shadow-md">
+            <div className="h-20 w-20  rounded-xl bg-gray-100 p-2">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -67,14 +67,19 @@ export function Contact() {
                 </g>
               </svg>
             </div>
-            <p className="font-semibold text-lg">Visit The Office</p>
-            <p> 302 Office Address, State Zip</p>
-            <p className="text-blue-300 mt-2 mb-2 tracking-wide">
-              Appointments only, no walk-ins
-            </p>
-            <button className="h-16 w-48 px-10 btn-grad2 rounded-[20px] drop-shadow-md">
-              Get Directions
-            </button>
+            <div>
+              <p className="font-semibold text-lg">Visit The Office</p>
+              <p className="mb-1">
+                Office: 100 W. Walnut Street, Decatur, Texas 76234
+              </p>
+              <p>Private Entrance: 201 N. Trinity, Decatur, Texas 76234</p>
+              <p className="text-blue-300 mt-2 mb-2 tracking-wide">
+                Appointments only, no walk-ins
+              </p>
+              <a href="https://maps.app.goo.gl/PmBFxvqFiDuWAWXW8" target="_blank" className="flex h-16 w-48 py-5 px-10 btn-grad2 items-center justify-center rounded-[20px] drop-shadow-md">
+                Get Directions
+              </a>
+            </div>
           </div>
         </div>
         <div className="flex flex-col w-full max-w-[400px] place-content-center justify-center items-center">
@@ -108,9 +113,9 @@ export function Contact() {
               </svg>
             </div>
             <h3 className=" font-semibold text-purple-400 text-lg">Hours</h3>
-            <p className="">Monday-Friday 9am-5pm</p>
+            <p className="">Monday-Friday 9am-4pm</p>
           </div>
-          <div className="w-full h-[370px] border rounded-[25px] p-10 bg-white drop-shadow-md">
+          <div className="w-full h-[425px] border rounded-[25px] flex flex-col justify-between p-10 bg-white drop-shadow-md">
             <div className="h-20 w-20 rounded-xl bg-gray-100 mb-10 p-2">
               <svg
                 viewBox="0 0 24 24"
@@ -145,17 +150,19 @@ export function Contact() {
                 </g>
               </svg>
             </div>
-            <p className="font-semibold text-lg">Chat With Me</p>
-            <p>+1 (900)999-9999</p>
-            <p className="text-pink-300 mt-2 mb-2 tracking-wide">
-              Please call during business hours
-            </p>
-            <a
-              href="tel:1234567890"
-              className="h-16 w-48 px-10 pt-5 btn-grad rounded-[20px] flex items-center justify-center drop-shadow-md"
-            >
-              Call My Office
-            </a>
+            <div>
+              <p className="font-semibold text-lg">Chat With Me</p>
+              <p>+1 (940) 464-1112</p>
+              <p className=" text-pink-300 mt-2 mb-2 tracking-wide">
+                Calls are answered and returned M-F between the hours of 9am-4pm
+              </p>
+              <a
+                href="tel:1234567890"
+                className="h-16 w-48 px-10 pt-5 btn-grad rounded-[20px] flex items-center justify-center drop-shadow-md"
+              >
+                Call My Office
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,9 +1,11 @@
-
 export function ClinicalApproach() {
   return (
     <section className="flex w-full gap-5 items-center flex-col p-3 pt-[8rem] mb-20">
       <div className="w-full max-w-7xl">
-        <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5">My Clinical <span className="text-purple-500 font-bold">Approach</span></h2>
+        <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5">
+          My Clinical{" "}
+          <span className="text-purple-500 font-bold">Approach</span>
+        </h2>
       </div>
       <div className="py-6 px-5 sm:py-10 sm:px-12 clinical-bg bg-top max-w-4xl mx-auto rounded-[20px]">
         <div className="font-medium py-3 px-5 rounded-[20px] bg-white flex flex-col gap-4">
@@ -34,7 +36,7 @@ export function ClinicalApproach() {
           <p>
             While I do typically prepare for sessions and have a “game plan” of
             how I would like to help you meet your goals, you are the driver in
-            this journey, and we will stop at whatever stop sign we need to you
+            this journey, and we will stop at whatever stop sign we need to. You
             just halt those brakes as you see fit. My approach involves{" "}
             <span className="text-purple-500">being observant</span>,{" "}
             <span className="text-purple-500">being comfortable</span>, and{" "}
