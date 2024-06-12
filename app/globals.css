@@ -52,6 +52,7 @@ div::-webkit-scrollbar-track {
 
 .fade-bg {
   background-image: url(../public/assets/bg_fade_w.webp);
+  background-position: 0,0 ;
 }
 
 .shadow-custom {
