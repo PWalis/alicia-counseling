@@ -6,7 +6,7 @@ import office1 from "@/public/assets/office1.jpg";
 export function Hero() {
   return (
     <section style={{
-      backgroundImage: "url(/assets/hero_background.png)",
+      backgroundImage: "url(/assets/hero_background_w.webp)",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       backgroundPositionY: "bottom",
