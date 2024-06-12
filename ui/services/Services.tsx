@@ -12,7 +12,7 @@ export function Services() {
 
   const specializations: Record<string, string[]> = {
     counseling: [
-      "Counseling focuses on emotional healing and well-being to finally reveal the empowered version of yourself. In counseling you experience a journey of self-exploration that considers values, beliefs, interests, and memories to rediscover YOU. Counseling can only be provided by a licensed mental health professional. I work with kiddos 5+, Teens, individuals, families, couples, and groups",
+      "Counseling focuses on emotional healing and well-being to finally reveal the empowered version of yourself. In counseling you experience a journey of self-exploration that considers values, beliefs, interests, and memories to rediscover YOU. Counseling can only be provided by a licensed mental health professional.",
     ],
     coaching: [
       "Coaching focuses on helping you achieve the goals that you've been struggling with. And ultimately gives you the skill building tool belt that will support you for life. Coaching sessions take a supportive, encouraging approach so that you can develop skills, behaviors, and processes to reach your goals.",
@@ -40,7 +40,7 @@ export function Services() {
           In:
         </h3>
         <div className="max-w-6xl border border-blue-500 rounded-[20px] contain-content">
-          <p className="px-10 text-left mt-5 w-full font-bold">I work with kiddos 5+, Teens, individuals, families, couples, and groups</p>
+          <p className="px-10 text-left mt-5 w-full font-bold">I work with kiddos 5+, Teens, individuals, families, couples, and groups. My interventions include: cognitive behavioral therapy, solution focused, play therapy, and virtual therapy</p>
           <ul className="p-10 pt-5 sm:columns-2 list-disc list-inside px-10 space-y-2">
             <li>Mood disorders</li>
             <li>Depression</li>
@@ -48,7 +48,6 @@ export function Services() {
             <li>Nuerodivergence</li>
             <li>Teen support</li>
             <li>Women’s health (perinatal, fetal loss, PCOS, endometriosis, post partum depression)</li>
-            <li>Postpartum depression</li>
             <li>Single parent & blended families</li>
             <li>Therapy for therapists</li>
             <li>Family members to those struggling with addiction</li>

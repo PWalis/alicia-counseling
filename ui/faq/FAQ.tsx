@@ -216,7 +216,7 @@ export function FAQ() {
             </button>
           ))}
         </div>
-        <div className="sm:w-[600px]">
+        <div className="sm:w-[600px] min-h-[444px]">
           <h3 className="text-2xl text-[#636061] tracking-wide mb-2">
             {topicTitles[topic]}{" "}
           </h3>
