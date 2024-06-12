@@ -1,12 +1,12 @@
 import Image from "next/image";
 import heroBackground from "@/public/assets/hero_background.png"
-import pic3 from "@/public/assets/pic3.jpg";
-import pic4 from "@/public/assets/pic5.jpg";
+import pic3 from "@/public/assets/pic3_compressed.jpg";
+import pic4 from "@/public/assets/pic5_compressed.jpg";
 import office1 from "@/public/assets/office1.jpg";
 export function Hero() {
   return (
     <section style={{
-      backgroundImage: "url(/assets/hero_background.png)",
+      backgroundImage: "url(/assets/hero_background_w.webp)",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       backgroundPositionY: "bottom",
@@ -14,12 +14,13 @@ export function Hero() {
       <div className="grid pt-[3.5rem] sm:pt-36  grid-cols-5 grid-rows-10 sm:grid-cols-4 sm:grid-rows-12 p-5 max-w-7xl max-h-max">
         <div className="col-start-1 col-end-4 row-start-4 row-end-8 row-span-4 sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-7">
           <Image
-            alt="placeholder-1"
+            alt="Alicia Headshot Image 1"
             className="rounded-[20px] drop-shadow-md border border-gray-200 max-h-[400px]"
             src={pic3}
             width={300}
             height={400}
             style={{objectFit: "cover"}}
+            priority
           />
           <p className="text-left"><span className="font-bold">Alicia Wimsatt</span></p>
         </div>
@@ -33,12 +34,13 @@ export function Hero() {
         </div>
         <div className="col-start-3 col-end-6 row-start-5 row-end-9  sm:col-start-4 sm:row-start-5 sm:row-span-6">
           <Image
-            alt="placeholder-1"
+            alt="Alicia Headshot Image 2"
             className="rounded-[20px] drop-shadow-md border border-gray-200 max-h-[400px]"
             src={pic4}
             width={300}
             height={400}
             style={{objectFit: "cover"}}
+            priority
           />
           <p className="text-center">MS, LPC Associate, NCC Supervised by Shawna Storey-Lovin, LPC-S</p>
         </div>

@@ -47,11 +47,11 @@ div::-webkit-scrollbar-track {
 
 .pricing-bg {
   background-position: 50% 75%;
-  background-image: url(../public/assets/pricing_background.png);
+  background-image: url(../public/assets/pricing_background_w.webp);
 }
 
 .fade-bg {
-  background-image: url(../public/assets/bg_fade.png);
+  background-image: url(../public/assets/bg_fade_w.webp);
 }
 
 .shadow-custom {
