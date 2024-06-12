@@ -14,12 +14,13 @@ export function Hero() {
       <div className="grid pt-[3.5rem] sm:pt-36  grid-cols-5 grid-rows-10 sm:grid-cols-4 sm:grid-rows-12 p-5 max-w-7xl max-h-max">
         <div className="col-start-1 col-end-4 row-start-4 row-end-8 row-span-4 sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-7">
           <Image
-            alt="placeholder-1"
+            alt="Alicia Headshot Image 1"
             className="rounded-[20px] drop-shadow-md border border-gray-200 max-h-[400px]"
             src={pic3}
             width={300}
             height={400}
             style={{objectFit: "cover"}}
+            priority
           />
           <p className="text-left">Meet  <span className="font-bold"> Alicia, </span></p>
         </div>
@@ -33,12 +34,13 @@ export function Hero() {
         </div>
         <div className="col-start-3 col-end-6 row-start-5 row-end-9  sm:col-start-4 sm:row-start-5 sm:row-span-6">
           <Image
-            alt="placeholder-1"
+            alt="Alicia Headshot Image 2"
             className="rounded-[20px] drop-shadow-md border border-gray-200 max-h-[400px]"
             src={pic4}
             width={300}
             height={400}
             style={{objectFit: "cover"}}
+            priority
           />
           <p className="text-center"> MS Clinical Mental Health Counseling </p>
         </div>

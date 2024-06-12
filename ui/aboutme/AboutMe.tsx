@@ -22,6 +22,8 @@ export function AboutMe() {
         <div className="relative w-fit">
           <Image
             className="rounded-[20px] h-[550px] w-[480px] object-cover"
+            height={550}
+            width={480}
             alt="about-me-image"
             src={pic1}
           />
