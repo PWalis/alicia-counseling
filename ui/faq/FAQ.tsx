@@ -142,7 +142,7 @@ export function FAQ() {
     topic2: [
       [
         "How Much is a Session?",
-        "Self-pay sessions are $115.00 per 50-minute session.",
+        "Self-pay sessions are $115.00 per 50-minute session. Sliding scale rates are offered on a limited basis and are subjected to proof of income.",
       ],
       [
         "Do You Take Insurance?",
@@ -150,7 +150,7 @@ export function FAQ() {
       ],
       [
         "What is the Sliding Scale based rate?",
-        "A sliding scale based rate is a way for lower income individuals/families to receive the help that they need at a lower rate. Sliding scale rates are offered on a limited basis and based off of proof of income.",
+        "A sliding scale based rate is an opportunity for me to bring more accessibility to mental health care at a lower cost to those individuals and families that qualify. Sliding scale rates are offered on a limited basis and are subjected to proof of income.",
       ],
       [
         "What is the Good Faith Estimate?",

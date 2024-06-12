@@ -68,7 +68,7 @@ export function Footer() {
                   </g>
                 </svg>
               </div>
-              <p> 302 Office Address, State Zip </p>
+              <p>Private Entrance: 201 N. Trinity, Decatur, Texas 76234</p>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-10 h-10">
@@ -94,7 +94,7 @@ export function Footer() {
                   </g>
                 </svg>
               </div>
-              <p> +1 (900) 999 9999</p>
+              <p> +1 (940) 464-1112</p>
             </div>
           </div>
         </div>
