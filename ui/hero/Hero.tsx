@@ -20,7 +20,6 @@ export function Hero() {
             width={300}
             height={400}
             style={{objectFit: "cover"}}
-            priority
           />
           <p className="text-left"><span className="font-bold">Alicia Wimsatt</span></p>
         </div>
@@ -40,7 +39,6 @@ export function Hero() {
             width={300}
             height={400}
             style={{objectFit: "cover"}}
-            priority
           />
           <p className="text-center">MS, LPC Associate, NCC Supervised by Shawna Storey-Lovin, LPC-S</p>
         </div>
