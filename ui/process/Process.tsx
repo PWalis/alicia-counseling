@@ -2,14 +2,16 @@
 import { motion } from "framer-motion";
 import useWindowDimensions from "@/lib/UseWindowDimensions";
 
-
 export function Process() {
-  const { width } =  useWindowDimensions() 
+  const { width } = useWindowDimensions();
 
   const isSmallScreen = width < 964;
 
   return (
-    <section id="process" className="flex fade-bg bg-cover bg-center pt-[16rem] pb-[7rem] sm:pb-[15rem] w-full gap-5 items-center flex-col">
+    <section
+      id="process"
+      className="flex fade-bg bg-cover bg-center pt-[16rem] pb-[7rem] sm:pb-[15rem] w-full gap-5 items-center flex-col"
+    >
       <div className="px-3 w-full max-w-7xl overflow-hidden">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5 text-white">
           Setting your
@@ -33,7 +35,7 @@ export function Process() {
             right: 320,
           }}
           animate={{
-            x: isSmallScreen ? 320 : 0
+            x: isSmallScreen ? 320 : 0,
           }}
           className="flex flex-row justify-center items-center gap-3 sm:gap-10 py-5 px-5 select-none mb-40"
         >
@@ -89,8 +91,8 @@ export function Process() {
               Schedule A Consultation
             </p>
             <p className="text-center text-xl pt-5">
-              Schedule your 15 minute consultation where we'll discuss your
-              needs.
+              Give me a call and let’s set up a quick 15 minute chat to see
+              about your needs and how I can help!
             </p>
             <p className="pt-10 text-xl text-[#66aeff] select-text z-10">
               {"(903) 999-9903"}
@@ -129,10 +131,10 @@ export function Process() {
               </svg>
             </div>
             <p className="text-xl text-[#66aeff] text-center pt-5 px-10">
-              Sign into your Personal Portal
+              Sign into Coach Talk Portal
             </p>
             <p className="px-2 text-center text-xl pt-5">
-              {"Do the boring paperwork you only have to do this once :)"}
+              Complete all the legal stuff before we get started!
             </p>
             <p className="pt-10 text-xl text-[#66aeff]">View the Portal</p>
           </div>
@@ -164,7 +166,7 @@ export function Process() {
               Attend Your First Appointment
             </p>
             <p className="px-2 text-center text-xl pt-5">
-              Take a seat on my comfy coach and let's get you taken care of.
+              Take a seat on my couch and LET’S TALK!
             </p>
             <a
               href="/"

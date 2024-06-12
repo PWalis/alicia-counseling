@@ -123,7 +123,7 @@ export function FileTabCard() {
           </p>
           <p>
             I completed my <span className="font-semibold">Bachelors Degree in Psychology and Bachelors Degree
-            in Child Learning and Development</span> at the University of Texas at
+            in Child Learning and Development</span> at the <span className="text-pink-400">University of Texas</span> at
             Dallas.
           </p>
         </motion.div>
