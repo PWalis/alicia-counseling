@@ -1,7 +1,7 @@
 import Image from "next/image";
 import heroBackground from "@/public/assets/hero_background.png"
-import pic3 from "@/public/assets/pic3.jpg";
-import pic4 from "@/public/assets/pic5.jpg";
+import pic3 from "@/public/assets/pic3_compressed.jpg";
+import pic4 from "@/public/assets/pic5_compressed.jpg";
 import office1 from "@/public/assets/office1.jpg";
 export function Hero() {
   return (
