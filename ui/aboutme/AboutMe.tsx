@@ -7,7 +7,7 @@ export function AboutMe() {
     <section
     id="aboutMe"
       style={{
-        backgroundImage: "url(/assets/about_background.png)",
+        backgroundImage: "url(/assets/about_background_w.webp)",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPositionY: "center",
