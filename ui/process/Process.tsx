@@ -10,7 +10,7 @@ export function Process() {
   return (
     <section
       id="process"
-      className="flex fade-bg bg-cover bg-center pt-[16rem] pb-[7rem] sm:pb-[15rem] w-full gap-5 items-center flex-col"
+      className="flex fade-bg bg-cover bg-center pt-[8rem] pb-[7rem] sm:pb-[15rem] w-full gap-5 items-center flex-col"
     >
       <div className="px-3 w-full max-w-7xl overflow-hidden">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5 text-white">
@@ -87,16 +87,16 @@ export function Process() {
                 </g>
               </svg>
             </div>
-            <p className="text-xl  text-[#66aeff] tracking-wider text-center px-10 pt-5">
+            <p className="text-xl text-[#66aeff] tracking-wider text-center px-10 pt-5">
               Schedule A Consultation
             </p>
-            <p className="text-center text-xl pt-5">
+            <p className="text-center text-xl pt-2">
               Give me a call and let’s set up a quick 15 minute chat to see
               about your needs and how I can help!
             </p>
-            <p className="pt-10 text-xl text-[#66aeff] select-text z-10">
-              {"(903) 999-9903"}
-            </p>
+            <a href="tel:9404641112" className="pt-2 text-xl text-[#66aeff] hover:text-[#b3d6ff] select-text z-10">
+              {"(940) 464-1112"}
+            </a>
           </div>
           <div className="shrink-0 shadow-[0_20px_#FFEC8D] sm:shadow-[-18px_18px_#FFEC8D] drop-shadow-md pt-5 pb-3 px-2 border bg-white border-gray-200 h-[400px] rounded-[20px] max-w-[320px] sm:max-w-[320px] flex flex-col justify-center items-center">
             <div className="w-24 h-24">
@@ -136,7 +136,7 @@ export function Process() {
             <p className="px-2 text-center text-xl pt-5">
               Complete all the legal stuff before we get started!
             </p>
-            <p className="pt-10 text-xl text-[#66aeff]">View the Portal</p>
+            <a href="" target="_blank" className="pt-10 text-xl hover:text-[#b3d6ff] text-[#66aeff]">View the Portal</a>
           </div>
           <div className="shrink-0 shadow-[0_20px_#FFEC8D] sm:shadow-[-18px_18px_#FFEC8D] drop-shadow-md pt-5 pb-3 px-2 border bg-white border-gray-200 h-[400px] rounded-[20px] max-w-[320px] sm:max-w-[320px] flex flex-col justify-center items-center">
             <div className="w-24 h-24">
@@ -176,7 +176,7 @@ export function Process() {
                 FAQ &&
                   FAQ.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="pt-10 text-xl text-[#66aeff] hover:text-gray-300"
+              className="pt-10 text-xl text-[#66aeff] hover:text-[#b3d6ff]"
             >
               View FAQ
             </a>

@@ -68,7 +68,7 @@ export function Footer() {
                   </g>
                 </svg>
               </div>
-              <p>Private Entrance: <p>201 N. Trinity, Decatur, Texas 76234</p></p>
+              <a href="https://maps.app.goo.gl/PmBFxvqFiDuWAWXW8" target="_blank">Private Entrance: 201 N. Trinity, Decatur, Texas 76234</a>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-10 h-10">
@@ -94,7 +94,7 @@ export function Footer() {
                   </g>
                 </svg>
               </div>
-              <p> +1 (940) 464-1112</p>
+              <a href="tel:9404641112"> +1 (940) 464-1112</a>
             </div>
           </div>
         </div>
