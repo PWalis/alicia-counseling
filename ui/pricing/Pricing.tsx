@@ -10,9 +10,9 @@ export function Pricing() {
         <div className="text-center text-black  tracking-wide mx-auto text-[18px] max-w-[700px] mb-6">
           <p>
             I want to <span className="font-bold">empower </span>as many people
-            as possible, which is why I keep my pricing very{" "}
-            <span className="text-teal-500">affordable</span> compared to other
-            counselors.
+            as possible, which is why I keep my rate very
+            <span className="text-teal-500"> low</span> compared to other
+            counselors. I also offer a sliding scale rate for those who are tight on funds.
           </p>
         </div>
         <div className="px-5 sm:px-8 pb-10 pt-10 flex flex-col justify-center rounded-[20px] text-center bg-white drop-shadow-xl items-center">
@@ -21,10 +21,9 @@ export function Pricing() {
           <p className="pt-10 font-semibold text-xl">per 50 minutes</p>
         </div>
         <div className="text-center px-2 py-3">
-          <p className="font-semibold text-[#686868] mx-auto max-w-[600px]">
-            For eligible families, I offer a sliding scale pricing model. For
-            more information please <span className="text-[#B084CC]">call</span>{" "}
-            to get your quote.{" "}
+          <p className="font-semibold text-black mx-auto max-w-[600px]">
+            For more information on the sliding scale model please <span className="text-[#B084CC] text-lg font-bold">call </span>
+            to see if you qualify.
           </p>
         </div>
       </div>
