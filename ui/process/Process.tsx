@@ -90,11 +90,10 @@ export function Process() {
             <p className="text-xl text-[#66aeff] tracking-wider text-center px-10 pt-5">
               Schedule A Consultation
             </p>
-            <p className="text-center text-xl pt-2">
-              Give me a call and let’s set up a quick 15 minute chat to see
-              about your needs and how I can help!
+            <p className="text-center text-xl pt-5 px-3">
+              Give me a call and let’s set up a quick 15 minute chat!
             </p>
-            <a href="tel:9404641112" className="pt-2 text-xl text-[#66aeff] hover:text-[#b3d6ff] select-text z-10">
+            <a href="tel:9404641112" className="pt-10 text-xl text-[#66aeff] hover:text-[#b3d6ff] select-text z-10">
               {"(940) 464-1112"}
             </a>
           </div>
@@ -133,7 +132,7 @@ export function Process() {
             <p className="text-xl text-[#66aeff] text-center pt-5 px-10">
               Sign into Coach Talk Portal
             </p>
-            <p className="px-2 text-center text-xl pt-5">
+            <p className="px-3 text-center text-xl pt-5">
               Complete all the legal stuff before we get started!
             </p>
             <a href="" target="_blank" className="pt-10 text-xl hover:text-[#b3d6ff] text-[#66aeff]">View the Portal</a>
@@ -165,7 +164,7 @@ export function Process() {
             <p className="text-xl text-[#66aeff] text-center pt-5 px-10">
               Attend Your First Appointment
             </p>
-            <p className="px-2 text-center text-xl pt-5">
+            <p className="px-3 text-center text-xl pt-5">
               Take a seat on my couch and LET’S TALK!
             </p>
             <a
