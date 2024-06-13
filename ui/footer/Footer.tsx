@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="z-40 w-full max-w-[1600px] text-white m-2 lg:p-10  mb-10 px-2">
-      <div className="bg-[#181818] rounded-[20px] p-5  flex flex-col lg:flex-row gap-10 w-full justify-center">
+    <footer className="z-40 w-full max-w-[1600px] text-white m-2 lg:p-10  px-2">
+      <div className="bg-[#181818] lg:py-20 rounded-[20px] p-5 px-10 py-20  flex flex-col lg:flex-row gap-10 w-full justify-center">
         <div className="flex flex-col md:flex-row gap-10 w-full place-items-center lg:justify-start justify-center">
           <div className="flex flex-col item-center justify-center w-fit place-items-center">
             <div className="h-20 w-20 bg-gray-100 rounded-full items-center flex justify-center text-black mb-2">
@@ -68,7 +68,7 @@ export function Footer() {
                   </g>
                 </svg>
               </div>
-              <p>Private Entrance: 201 N. Trinity, Decatur, Texas 76234</p>
+              <p>Private Entrance: <p>201 N. Trinity, Decatur, Texas 76234</p></p>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-10 h-10">

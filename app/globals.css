@@ -42,7 +42,7 @@ div::-webkit-scrollbar-track {
 }
 
 .clinical-bg {
-  background-image: url(../public/assets/clinical_background.png);
+  background-image: url(../public/assets/clinical_background_w.webp);
 }
 
 .pricing-bg {
@@ -52,6 +52,11 @@ div::-webkit-scrollbar-track {
 
 .fade-bg {
   background-image: url(../public/assets/bg_fade_w.webp);
+}
+
+.faq-bg {
+  background-position: 40% 30%;
+  background-image: url(../public/assets/faq_bg.png);
 }
 
 .shadow-custom {
