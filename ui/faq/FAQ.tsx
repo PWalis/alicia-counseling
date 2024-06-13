@@ -201,7 +201,7 @@ export function FAQ() {
       className=" flex flex-col justify-center items-center w-full pb-20 pt-[8rem]"
     >
       <div className="w-full max-w-7xl mb-10">
-        <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5">
+        <h2 className="text-center sm:text-left px-3 text-5xl font-light tracking-wider mb-5">
           Frequently Asked{" "}
           <span className="text-pink-500 font-bold">Questions</span>
         </h2>
