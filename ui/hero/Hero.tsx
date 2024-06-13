@@ -6,7 +6,7 @@ import office1 from "@/public/assets/office1.jpg";
 export function Hero() {
   return (
     <section style={{
-      backgroundImage: "url(/assets/hero_background_w.webp)",
+      backgroundImage: "url(/assets/hero_background.png)",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       backgroundPositionY: "bottom",
@@ -21,13 +21,13 @@ export function Hero() {
             height={400}
             style={{objectFit: "cover"}}
           />
-          <p className="text-left"><span className="font-bold">Alicia Wimsatt</span></p>
+          <p className="text-left pl-8"><span className="font-semibold">Alicia Wimsatt</span></p>
         </div>
         <div className="z-10 pb-4 pt-16 sm:pt-0 sm:pb-0 col-span-5 row-start-1 row-end-4 sm:col-start-2 sm:col-span-2 sm:row-start-2 sm:row-span-6 flex justify-center flex-col items-center">
           <h1 className=" px-3 text-4xl lg1/2:text-6xl sm:text-center text-white tracking-[.2em] font-light">
             You & Your Mental Health <span className="font-extrabold text-5xl lg1/2:text-7xl">MATTER.</span>
           </h1>
-          <p className=" px-3 text-sm lg:text-md lg:font-semibold sm:text-center sm:max-w-[28rem] pt-2 text-white tracking-wider">
+          <p className=" px-3 text-md lg:font-semibold sm:text-center sm:max-w-[30rem] pt-2 text-white tracking-wider">
           Through my specializations in counseling, coaching, and groups, I am fueled in helping YOU, driven to encourage and empower YOU, and to co-pilot this journey with YOU, as we together maneuver this road to becoming YOU!
           </p>
         </div>

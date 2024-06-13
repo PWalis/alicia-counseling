@@ -10,7 +10,7 @@ export function Process() {
   return (
     <section
       id="process"
-      className="flex fade-bg bg-cover bg-center pt-[8rem] pb-[7rem] sm:pb-[15rem] w-full gap-5 items-center flex-col"
+      className="flex fade-bg bg-cover bg-center pt-[12rem] pb-[7rem] sm:pb-[15rem] w-full gap-5 items-center flex-col"
     >
       <div className="px-3 w-full max-w-7xl overflow-hidden">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5 text-white">
