@@ -70,7 +70,7 @@ export const Header = () => {
             animate={width >= 964 || menuIsOpen ? "opened" : "closed"}
             className={clsx(
               "h-[calc(110dvh)] w-[calc(111dvw)] absolute bg-[#181818] lg1/2:bg-transparent lg1/2:pr-5 lg1/2:flex lg1/2:h-auto lg1/2:w-auto lg1/2:top-auto",
-              menuIsOpen ? "-top-3 -right-7 content-center" : "hidden"
+              menuIsOpen ? "-top-3 -right-7 place-content-center" : "hidden"
             )}
           >
             <nav

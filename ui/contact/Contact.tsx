@@ -9,7 +9,7 @@ export function Contact() {
           <span className="text-purple-400 font-bold">Contact </span>The Office
         </h2>
       </div>
-      <div className="flex flex-col sm:flex-row px-3 items-center gap-10 w-full justify-center">
+      <div className="flex flex-col md:flex-row px-3 items-center gap-10 w-full justify-center">
         <div className="flex flex-col w-full max-w-[500px] place-content-center justify-center items-center h-full">
           <div className="flex flex-col items-center text-center mb-10">
             <div className="h-16 w-16 rounded-full">
@@ -38,7 +38,7 @@ export function Contact() {
             <h3 className=" font-semibold text-purple-400 text-lg">Location</h3>
             <p className="">100 W. Walnut Street </p> <p>Decatur, Texas 76234</p>
           </div>
-          <div className="w-full h-full min-h-[400px] flex flex-col justify-between border rounded-[25px] p-10 bg-white drop-shadow-md">
+          <div className="w-full h-[450px] flex flex-col justify-between border rounded-[25px] p-10 bg-white drop-shadow-md">
             <div className="h-20 w-20  rounded-xl bg-gray-100 p-2">
               <svg
                 viewBox="0 0 24 24"
@@ -82,7 +82,7 @@ export function Contact() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-full max-w-[500px] h-[600px] lg:h-[400px] place-content-center justify-center items-center">
+        <div className="flex flex-col w-full max-w-[500px]  place-content-center justify-center items-center">
           <div className="flex flex-col items-center text-center mb-10">
             <div className="h-16 w-16">
               <svg
@@ -116,7 +116,7 @@ export function Contact() {
             <p className="">Monday - Friday </p>
             <p>9am - 4pm</p>
           </div>
-          <div className="w-full border rounded-[25px] lg:h-[400px] h-[600px] flex flex-col justify-between p-10 bg-white drop-shadow-md">
+          <div className="w-full border h-[450px] rounded-[25px] flex flex-col justify-between p-10 bg-white drop-shadow-md">
             <div className="h-20 w-20 rounded-xl bg-gray-100 mb-10 p-2">
               <svg
                 viewBox="0 0 24 24"
