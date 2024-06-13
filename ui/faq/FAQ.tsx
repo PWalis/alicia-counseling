@@ -190,10 +190,15 @@ export function FAQ() {
     topic4: "My Methods",
   };
 
+  const linecolor = ["#f472b6", "#d946ef", "#14b8a6", "#0ea5e9", "#9f7aea"];
+  const titlecolor = ["text-pink-500", "text-fuchsia-500", "text-teal-500", "text-sky-500", "text-blue-500"];
+  const cardcolor  = ["bg-pink-100", "bg-fuchsia-100", "bg-teal-100/80", "bg-sky-100", "bg-blue-50"];
+
+
   return (
     <section
       id="faq"
-      className="px-3 flex flex-col justify-center items-center w-full mb-20 pt-[8rem]"
+      className=" flex flex-col justify-center items-center w-full pb-20 pt-[8rem]"
     >
       <div className="w-full max-w-7xl mb-10">
         <h2 className="text-center sm:text-left text-5xl font-light tracking-wider mb-5">
@@ -201,22 +206,24 @@ export function FAQ() {
           <span className="text-pink-500 font-bold">Questions</span>
         </h2>
       </div>
-      <div className="flex flex-col md:flex-row gap-10 md:gap-20 w-full max-w-lg md:max-w-full justify-center">
-        <div className="sm:w-[500px] sm:min-w-[400px] max-h-[406px] border border-gray-200 rounded-[20px] px-6 py-6 flex flex-col gap-3 drop-shadow-md bg-white">
-          {Object.keys(topicTitles).map((key) => (
+     
+      <div className="flex flex-col lg:flex-row w-full lg:gap-10 md:max-w-full justify-center items-center lg:h-[600px]"> 
+        <div className="faq-bg bg-fill bg-no-repeat w-full min-h-[520px] lg:w-fit sm:p-20 items-center justify-center flex">
+        <div className="sm:w-[500px] m-3 sm:min-w-[400px] max-h-[406px] w-full border border-pink-200 rounded-[20px] px-6 py-6 flex flex-col justify-center gap-3 drop-shadow-md bg-white">
+          {Object.keys(topicTitles).map((key, index) => (
             <button
               key={key}
               onClick={() => handleTopicClick(key)}
               className={`rounded-[25px] text-md h-[80px] flex lg:text-xl items-center ${
-                topic === key ? "bg-[#fdebf3]" : ""
+                topic === key ? cardcolor[index % cardcolor.length] : ""
               }`}
             >
               <div className="w-12 h-12 ml-5">{topicIcons[key]}</div>
               <p className="font-semibold pl-2">{topicTitles[key]}</p>
             </button>
           ))}
-        </div>
-        <div className="sm:w-[600px] min-h-[444px]">
+        </div></div>
+        <div className="sm:w-[600px] m-3">
           <h3 className="text-2xl text-[#636061] tracking-wide mb-2">
             {topicTitles[topic]}{" "}
           </h3>
@@ -231,14 +238,14 @@ export function FAQ() {
                   <AccordionHeader
                     onClick={() => handleOpen(index)}
                     className={`${
-                      open === index ? "text-pink-500 mb-2" : "text-[#000000]"
+                      open === index ? `${titlecolor[index % titlecolor.length]} mb-2` : "text-[#000000]"
                     }`}
                   >
                     {faq[0]}
                   </AccordionHeader>
                   <AccordionBody className="text-md">{faq[1]}</AccordionBody>
                   <svg
-                    className="mt-4 mb-2"
+                    className=" mb-2"
                     width="100%"
                     height="1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +255,7 @@ export function FAQ() {
                       y1="1"
                       x2="100%"
                       y2="1"
-                      stroke="#ffb0e2"
+                      stroke={linecolor[index % linecolor.length]}
                       stroke-width="1"
                     />
                   </svg>
