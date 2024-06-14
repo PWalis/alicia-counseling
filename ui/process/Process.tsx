@@ -130,7 +130,7 @@ export function Process() {
               </svg>
             </div>
             <p className="text-xl text-[#66aeff] text-center pt-5 px-10">
-              Sign into Coach Talk Portal
+              Sign into Couch Talk Portal
             </p>
             <p className="px-3 text-center text-xl pt-5">
               Complete all the legal stuff before we get started!
