@@ -5,6 +5,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import useWindowDimensions from "@/lib/UseWindowDimensions";
 
 function Icon({ id, open }: any) {
   return (
@@ -118,6 +119,7 @@ const topicIcons: Record<string, JSX.Element> = {
 export function FAQ() {
   const [topic, setTopic] = useState("topic1");
   const [open, setOpen] = useState(-1);
+  const { width } = useWindowDimensions();
 
   const handleOpen = (value: number) => {
     setOpen(open === value ? -1 : value);
@@ -126,6 +128,11 @@ export function FAQ() {
   const handleTopicClick = (topic: string) => {
     setTopic(topic);
     setOpen(-1);
+    if (width < 1024) {
+      let accordion = document.getElementById("accordion");
+      accordion &&
+        accordion.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
   };
 
   const faqs: Record<string, any> = {
@@ -191,9 +198,20 @@ export function FAQ() {
   };
 
   const linecolor = ["#f472b6", "#d946ef", "#14b8a6", "#0ea5e9", "#9f7aea"];
-  const titlecolor = ["text-pink-500", "text-fuchsia-500", "text-teal-500", "text-sky-500", "text-blue-500"];
-  const cardcolor  = ["bg-pink-100", "bg-fuchsia-100", "bg-teal-100/80", "bg-sky-100", "bg-blue-50"];
-
+  const titlecolor = [
+    "text-pink-500",
+    "text-fuchsia-500",
+    "text-teal-500",
+    "text-sky-500",
+    "text-blue-500",
+  ];
+  const cardcolor = [
+    "bg-pink-100",
+    "bg-fuchsia-100",
+    "bg-teal-100/80",
+    "bg-sky-100",
+    "bg-blue-50",
+  ];
 
   return (
     <section
@@ -206,25 +224,29 @@ export function FAQ() {
           <span className="text-pink-500 font-bold">Questions</span>
         </h2>
       </div>
-     
-      <div className="flex flex-col lg:flex-row w-full lg:gap-10 md:max-w-full justify-center items-center lg:h-[600px]"> 
+
+      <div className="flex flex-col lg:flex-row w-full lg:gap-10 md:max-w-full justify-center items-center lg:h-[600px]">
         <div className="faq-bg bg-fill bg-no-repeat w-full min-h-[520px] lg:w-fit sm:p-20 items-center justify-center flex">
-        <div className="sm:w-[500px] m-3 sm:min-w-[400px] max-h-[406px] w-full border border-pink-200 rounded-[20px] px-6 py-6 flex flex-col justify-center gap-3 drop-shadow-md bg-white">
-          {Object.keys(topicTitles).map((key, index) => (
-            <button
-              key={key}
-              onClick={() => handleTopicClick(key)}
-              className={`rounded-[25px] text-md h-[80px] flex lg:text-xl items-center ${
-                topic === key ? cardcolor[index % cardcolor.length] : ""
-              }`}
-            >
-              <div className="w-12 h-12 ml-5">{topicIcons[key]}</div>
-              <p className="font-semibold pl-2">{topicTitles[key]}</p>
-            </button>
-          ))}
-        </div></div>
+          <div className="sm:w-[500px] m-3 sm:min-w-[400px] max-h-[406px] w-full border border-pink-200 rounded-[20px] px-6 py-6 flex flex-col justify-center gap-3 drop-shadow-md bg-white">
+            {Object.keys(topicTitles).map((key, index) => (
+              <button
+                key={key}
+                onClick={() => handleTopicClick(key)}
+                className={`rounded-[25px] text-md h-[80px] flex lg:text-xl items-center ${
+                  topic === key ? cardcolor[index % cardcolor.length] : ""
+                }`}
+              >
+                <div className="w-12 h-12 ml-5">{topicIcons[key]}</div>
+                <p className="font-semibold pl-2">{topicTitles[key]}</p>
+              </button>
+            ))}
+          </div>
+        </div>
         <div className="sm:w-[600px] m-3">
-          <h3 className="text-2xl text-[#636061] tracking-wide mb-2">
+          <h3
+            id="accordion"
+            className="text-2xl text-[#636061] tracking-wide mb-2"
+          >
             {topicTitles[topic]}{" "}
           </h3>
           {topic &&
@@ -238,7 +260,9 @@ export function FAQ() {
                   <AccordionHeader
                     onClick={() => handleOpen(index)}
                     className={`${
-                      open === index ? `${titlecolor[index % titlecolor.length]} mb-2` : "text-[#000000]"
+                      open === index
+                        ? `${titlecolor[index % titlecolor.length]} mb-2`
+                        : "text-[#000000]"
                     }`}
                   >
                     {faq[0]}

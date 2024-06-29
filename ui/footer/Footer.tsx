@@ -20,7 +20,7 @@ export function Footer() {
             <div>
               <p className="font-light text-sm max-w-[350px] text-center mt-3">
                 Our hours of operation are
-                <span className="text-[#FF6392] font-medium"> 9am - 5pm </span>
+                <span className="text-[#FF6392] font-medium"> 9am - 4pm </span>
                 Central Time Monday through Friday
               </p>
             </div>
