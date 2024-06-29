@@ -20,7 +20,7 @@ export function Quotes() {
   const quotes = [
     ["What IF I don’t what IF today?", "Alicia Wimsatt"],
     [
-      "My job as your therapist is to work myself out of a job, when therapists are no longer needed. Could you imagine a world where mental health is acknowledged,societal expectations are not generalized, there is no longer a negative stigma, and you come equipped with the tools and skills you need to take on those challenges? Imagine that world and fight for it!",
+      "My goal as a therapist is to work myself out of a job because only then will the mental health stigma succumb to empowered, independent, fighters!",
       "Alicia Wimsatt",
     ],
     [
@@ -32,7 +32,7 @@ export function Quotes() {
       "Alicia Wimsatt",
     ],
     [
-      "The word Normal is defined as conforming to a standard. Now, define YOUR NORMAL? There is no “Normal” when it comes to your trauma, your thoughts, your feelings, and your fears. Not a single person has lived it like you have lived it. Make your new standard and make your new NORMAL because you don’t have to sit where society expects you to be.",
+      "Define your NORMAL? Not what the standard is, not what people say it should be, and not where society expects you to be.",
       "Alicia Wimsatt",
     ],
     [
@@ -113,7 +113,7 @@ export function Quotes() {
   return (
     <section
       ref={ref}
-      className="flex h-[850px] md:h-[700px] lg:h-[500px] flex-row sm:flex-row sm:justify-between items-center max-w-7xl w-full overflow-hidden"
+      className="flex h-[400px] lg:h-[500px] flex-row sm:flex-row sm:justify-between items-center max-w-7xl w-full overflow-hidden"
     >
       <button
         className="hidden sm:block z-10 mx-auto col-start-2 w-fit row-start-2 hover:scale-105 active:scale-95"

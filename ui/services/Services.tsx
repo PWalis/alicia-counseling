@@ -18,7 +18,7 @@ export function Services() {
       "Coaching focuses on helping you achieve the goals that you've been struggling with. And ultimately gives you the skill building tool belt that will support you for life. Coaching sessions take a supportive, encouraging approach so that you can develop skills, behaviors, and processes to reach your goals.",
     ],
     groups: [
-      "Groups focus on bringing people on a similar journey together to support one another and take steps towards a better future. In group sessions you will meet peers and make connections that are difficult to discover during your normal day to day. The connections you make with your group sets you up for success.",
+      "Groups focus on bringing people on a similar journey together to support one another while taking steps to their desired destination. In group sessions, you and your peers will make connections in a journey together that is built upon a safe, cohesiveness, collaborative, and supportive environment.",
     ],
   };
 
@@ -40,21 +40,21 @@ export function Services() {
           In:
         </h3>
         <div className="max-w-6xl border border-blue-500 rounded-[20px] contain-content">
-          <p className="px-10 text-left mt-5 w-full font-bold">I work with kiddos 5+, Teens, individuals, families, couples, and groups. My interventions include: cognitive behavioral therapy, solution focused, play therapy, and virtual therapy</p>
+          <p className="px-10 text-left mt-5 w-full font-bold">I specialize in working with kiddos (ages 5+), teens, individuals, families, couples, and groups. My primary interventions used include: Cognitive Behavioral Therapy (CBT), Solution Focused Brief Therapy (SFBT), and play included therapy! I offer both in person and virtual therapeutic setting opportunities</p>
           <ul className="p-10 pt-5 sm:columns-2 list-disc list-inside px-10 space-y-2">
+            <li>Nuerodivergence</li>
+            <li>Women’s health (perinatal, fetal loss, PCOS, endometriosis, post partum depression)</li>
+            <li>Single parent & blended families</li>
+            <li>Rediscovery and Reigniting of Relationships</li>
+            <li>People pleasing behaviors and boundary setting</li>
+            <li>Teen support</li>
+            <li>Therapy for therapists</li>
+            <li>Family members to those struggling with addiction</li>
+            <li>Grief</li>
             <li>Mood disorders</li>
             <li>Depression</li>
             <li>Anxiety</li>
-            <li>Nuerodivergence</li>
-            <li>Teen support</li>
-            <li>Women’s health (perinatal, fetal loss, PCOS, endometriosis, post partum depression)</li>
-            <li>Single parent & blended families</li>
-            <li>Therapy for therapists</li>
-            <li>Family members to those struggling with addiction</li>
-            <li>People pleasing behaviors and boundary setting</li>
-            <li>Grief</li>
             <li>Christian counseling</li>
-            <li>Rediscovery and Reigniting of Relationships</li>
           </ul>
         </div>
       </div>

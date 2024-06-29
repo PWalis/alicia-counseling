@@ -54,26 +54,32 @@ export function EmergencyBanner() {
     <div className="">
       {isBannerVisible && (
         <motion.div
-        initial={{ y: "100vh" }}
-        animate={{ y: 0 }}
-        exit={{ y: "100vh" }}
-        transition={{ duration: 0.5 }}
-        className="fixed bottom-0 text-sm left-0 w-full bg-[#181818] text-[#FFD1D1] py-4 px-6 flex justify-center items-center z-50"
-      >
+          initial={{ y: "100vh" }}
+          animate={{ y: 0 }}
+          exit={{ y: "100vh" }}
+          transition={{ duration: 0.5 }}
+          className="fixed bottom-0 text-sm left-0 w-full bg-[#181818] text-[#FFD1D1] py-4 px-6 flex justify-center items-center z-50"
+        >
           <div className="flex flex-col md:flex-row-reverse items-center gap-3">
             <div className="">
               <CloseIcon onClick={handleDismiss} />
             </div>
             <p className="text-center">
-              If you are in a life threatening situation, please call the
-              <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer" className="text-[#EA8B8B]">
+              If you are experiencing a mental health crisis, please call the
+              <a
+                href="https://988lifeline.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#EA8B8B]"
+              >
                 {" "}
                 Suicide and Crisis Lifeline
               </a>
-              , a free, 24-hour hotline, at <span className="text-[#EA8B8B]">988</span>. Your call will be routed to the
-              crisis center near you. If your issue is an emergency, call
-              <span className="text-[#EA8B8B]"> 911</span> or go to your nearest
-              emergency room.
+              , a free, 24-hour hotline, at{" "}
+              <span className="text-[#EA8B8B]">988</span>. Your call will be
+              routed to the crisis center near you. If you are experiencing an
+              emergency, please call
+              <span className="text-[#EA8B8B]"> 911</span> or go to the nearest emergency room.
             </p>
           </div>
         </motion.div>

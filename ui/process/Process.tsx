@@ -93,7 +93,10 @@ export function Process() {
             <p className="text-center text-xl pt-5 px-3">
               Give me a call and let’s set up a quick 15 minute chat!
             </p>
-            <a href="tel:9404641112" className="pt-10 text-xl text-[#66aeff] hover:text-[#b3d6ff] select-text z-10">
+            <a
+              href="tel:9404641112"
+              className="pt-10 text-xl text-[#66aeff] hover:text-[#b3d6ff] select-text z-10"
+            >
               {"(940) 464-1112"}
             </a>
           </div>
@@ -130,12 +133,18 @@ export function Process() {
               </svg>
             </div>
             <p className="text-xl text-[#66aeff] text-center pt-5 px-10">
-              Sign into Couch Talk Portal
+              Sign into The Couch Talk Portal
             </p>
             <p className="px-3 text-center text-xl pt-5">
               Complete all the legal stuff before we get started!
             </p>
-            <a href="" target="_blank" className="pt-10 text-xl hover:text-[#b3d6ff] text-[#66aeff]">View the Portal</a>
+            <a
+              href="https://alicia-wimsatt.clientsecure.me/"
+              target="_blank"
+              className="pt-10 text-xl hover:text-[#b3d6ff] text-[#66aeff]"
+            >
+              View the Portal
+            </a>
           </div>
           <div className="shrink-0 shadow-[0_20px_#FFEC8D] sm:shadow-[-18px_18px_#FFEC8D] drop-shadow-md pt-5 pb-3 px-2 border bg-white border-gray-200 h-[400px] rounded-[20px] max-w-[320px] sm:max-w-[320px] flex flex-col justify-center items-center">
             <div className="w-24 h-24">
