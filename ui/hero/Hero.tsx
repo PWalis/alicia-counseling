@@ -37,12 +37,10 @@ export function Hero() {
           </h1>
           <p className=" px-3 text-md lg:font-semibold sm:text-center sm:max-w-[30rem] pt-2 text-white tracking-wider">
             Through my specializations in counseling, coaching, and groups, I am
-            fueled in helping YOU, driven to{" "}
-            <span className="font-bold text-lg">encourage</span> and{" "}
-            <span className="font-bold text-lg">empower</span> YOU, and to
-            co-pilot this journey with YOU, as we together maneuver this road to
-            becoming YOU, and to be your co-pilot along this journey as we
-            together maneuver this road to becoming YOU.
+            driven to <span className="font-bold text-lg">encourage</span> and{" "}
+            <span className="font-bold text-lg">empower</span> YOU, to help
+            bring fuel to YOU loving YOU, and to be your co-pilot along this
+            journey as we together maneuver this road to becoming YOU.
           </p>
         </div>
         <div className="col-start-3 col-end-6 row-start-5 row-end-9  sm:col-start-4 sm:row-start-5 sm:row-span-6">
