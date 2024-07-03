@@ -68,7 +68,12 @@ export function Footer() {
                   </g>
                 </svg>
               </div>
-              <a href="https://maps.app.goo.gl/PmBFxvqFiDuWAWXW8" target="_blank">Private Entrance: 201 N. Trinity, Decatur, Texas 76234</a>
+              <a
+                href="https://maps.app.goo.gl/PmBFxvqFiDuWAWXW8"
+                target="_blank"
+              >
+                Private Entrance: 201 N. Trinity, Decatur, Texas 76234
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-10 h-10">
@@ -174,7 +179,8 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a                     href="/"
+                  <a
+                    href="/"
                     onClick={(e) => {
                       let process = document.getElementById("process");
                       e.preventDefault();
@@ -185,7 +191,8 @@ export function Footer() {
                         });
                     }}
                   >
-                    My Process</a>
+                    My Process
+                  </a>
                 </li>
                 <li>
                   <a
@@ -223,7 +230,7 @@ export function Footer() {
             </div>
           </div>
           <p className="max-w-[800px] text-sm font-light text-[#FFD1D1]">
-            If you are in a life threatening situation, please call the
+            If you are experiencing a mental health crisis, please call the
             <a
               href="https://988lifeline.org/"
               target="_blank"
@@ -235,9 +242,9 @@ export function Footer() {
             </a>
             , a free, 24-hour hotline, at{" "}
             <span className="text-[#EA8B8B]">988</span>. Your call will be
-            routed to the crisis center near you. If your issue is an emergency,
-            call
-            <span className="text-[#EA8B8B]"> 911</span> or go to your nearest
+            routed to the crisis center near you. If you are experiencing an
+            emergency, please call
+            <span className="text-[#EA8B8B]"> 911</span> or go to the nearest
             emergency room.
           </p>
         </div>

@@ -174,7 +174,7 @@ export function Quotes() {
                       "
                     </span>
                     {quote[0]}
-                    <span className="absolute right-0 sm:-right-7 -bottom-10 text-6xl text-pink-600">
+                    <span className="absolute -right-4 sm:-right-7 -bottom-10 text-6xl text-pink-600">
                       "
                     </span>
                     <span className="absolute -bottom-10 -right-5 sm:-right-7 text-sm text-right">
