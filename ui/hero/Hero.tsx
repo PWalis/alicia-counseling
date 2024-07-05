@@ -24,7 +24,7 @@ export function Hero() {
             height={400}
             style={{ objectFit: "cover" }}
           />
-          <p className="text-left pl-8">
+          <p className="text-left pl-1 sm:pl-8">
             <span className="font-semibold">Alicia Wimsatt</span>
           </p>
         </div>
