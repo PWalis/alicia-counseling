@@ -9,7 +9,7 @@ const LexendDeca = Lexend_Deca({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Couch Talk Counseling and Coaching",
-  description: "Mental health counseling and coaching",
+  description: "Mental health counseling and coaching - Heal and grow through counseling, coaching, and groups. Meet Alicia Wimsatt, your new counselor, coach, and guide on your growth journey.",
 };
 
 export const viewport: Viewport = {
