@@ -113,7 +113,7 @@ export function Contact() {
             <p className="">Monday - Friday </p>
             <p>9am - 4pm</p>
           </div>
-          <div className="w-full border h-[550px] sm:h-[550px] rounded-[25px] flex flex-col justify-between pt-32 pb-12 p-10 bg-white drop-shadow-md">
+          <div className="w-full border h-[550px] sm:h-[550px] rounded-[25px] flex flex-col justify-between pt-15 pb-12 p-10 bg-white drop-shadow-md">
             {/* <div className="max-h-[200px] max-w-[300px] rounded-xl bg-gray-100 mb-10 w-fit">
             <Image alt="Picture of the office" style={{borderRadius: "20px", boxShadow: "12px -12px rgba(245, 40, 145, 0.3)"}} width={300} height={200} src={officepic2}></Image>
             </div> */}
@@ -149,12 +149,17 @@ export function Contact() {
             <div>
               <p className="font-semibold text-lg pt-3">Chat With Me</p>
               <p>+1 (940) 464-1112</p>
-              <p className=" text-pink-300 mt-2 mb-2 tracking-wide max-w-[400px]">
-                Calls are answered and returned Monday-Friday between the hours
-                of 9am-4pm
+              <p className=" text-pink-500 mt-2 mb-2 tracking-wide max-w-[400px]">
+                I'm old school, so this line doesn't receive texts. Pick up the
+                phone and let's chat.
               </p>
+             
+
               <p>
                 Evening and weekend appointment availability on a limited basis
+              </p> <p className=" text-pink-400 mt-2 mb-2 tracking-wide max-w-[400px]">
+                Calls are answered and returned Monday-Friday between the hours
+                of 9am-4pm
               </p>
               <a
                 href="tel:9404641112"

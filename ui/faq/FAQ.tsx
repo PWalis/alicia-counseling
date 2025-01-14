@@ -138,10 +138,6 @@ export function FAQ() {
   const faqs: Record<string, any> = {
     topic1: [
       [
-        "I have heard of a “LPC” but not of a “LPC Associate”, what is that?",
-        "LPC stands for a Licensed Professional Counselor. A LPC is a fully licensed professional who has at least a Master’s Degree in Counseling or a related field, has passed the National Counseling Exam for licensure, and had completed and obtained 3000 hours of supervised clinical experience. These professionals are in independent practice. A LPC Associate (Licensed Professional Counselor Associate) is a provisional license to conduct counseling under the supervision of a Licensed Professional Counselor Supervisor (LPC-S). A LPC Associate has also earned a Master’s Degree in Counseling or a related field, has passed the National Counseling Exam for licensure, and is in the process of completing the required 3000 hours of supervised clinical experience to obtain full and independent licensure. Hey, that’s me! As a LPC Associate, I am supervised by Shawna Storey-Lovin, LPC-S. ",
-      ],
-      [
         "If I bring my minor in to see you, how do I get to be involved?",
         "As the parent/guardian of your minor, I rely heavily on your input and feedback related to your child. The first session is a sit down with you to discuss your concerns and desires for your child. After that, it’s time to get to work and most of my time will be spent directly working with your child independently. However, throughout your child’s treatment, we will engage in periodic parent training and/or consultation sessions to form a partnership and provide the best treatment for your child. ",
       ],

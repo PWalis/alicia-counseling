@@ -53,7 +53,7 @@ export function Hero() {
             style={{ objectFit: "cover" }}
           />
           <p className="text-center">
-            MS, LPC Associate, NCC Supervised by Shawna Storey-Lovin, LPC-S
+            MS, LPC
           </p>
         </div>
       </div>
