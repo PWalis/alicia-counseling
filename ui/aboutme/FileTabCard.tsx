@@ -95,8 +95,8 @@ export function FileTabCard() {
             I am <span className="text-2xl text-pink-400 tracking-wide">Alicia Wimsatt</span>,
           </p>
           <p>
-            and I am an LPC Associate supervised by Shawna Storey-Lovin, LPC-S.
-            I am the Owner of <span className="font-semibold">Couch Talk Counseling and Coaching.</span>
+            and I am a Licensed Professional Counselor
+            and the Owner of <span className="font-semibold">Couch Talk Counseling and Coaching.</span>
           </p>
           <p>
             Aside from the fancy titles, I am a fellow Wise-Countian, boy mom x
