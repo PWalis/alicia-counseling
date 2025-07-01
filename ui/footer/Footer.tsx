@@ -72,7 +72,7 @@ export function Footer() {
                 href="https://maps.app.goo.gl/PmBFxvqFiDuWAWXW8"
                 target="_blank"
               >
-                Private Entrance: 201 N. Trinity, Decatur, Texas 76234
+                117 W. Main Street, Decatur, Texas 76234
               </a>
             </div>
             <div className="flex items-center gap-2">

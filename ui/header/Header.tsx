@@ -198,7 +198,7 @@ export const Header = () => {
                       </g>
                     </svg>
                   </div>
-                  <a href="https://maps.app.goo.gl/PmBFxvqFiDuWAWXW8" target="_blank" className="w-[300px] text-center">Private Entrance: 201 N. Trinity, Decatur, Texas 76234 </a>
+                  <a href="https://maps.app.goo.gl/PmBFxvqFiDuWAWXW8" target="_blank" className="w-[300px] text-center">117 W. Main Street, Decatur, Texas 76234 </a>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                   <div className="w-10 h-10">
