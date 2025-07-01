@@ -40,7 +40,7 @@ export function Contact() {
               </svg>
             </div>
             <h3 className=" font-semibold text-purple-400 text-lg">Location</h3>
-            <p className="">100 W. Walnut Street </p>{" "}
+            <p className="">117 W. Main Street </p>{" "}
             <p>Decatur, Texas 76234</p>
           </div>
           <div className="w-full h-[550px] sm:h-[550px] flex flex-col justify-center border rounded-[25px] p-10 bg-white drop-shadow-md">
@@ -57,20 +57,19 @@ export function Contact() {
               ></Image>
             </div>
             <div>
-              <p className="font-semibold text-lg pt-3">Visit The Office</p>
+              <p className="font-semibold text-lg pt-3 mt-3">Visit The Office</p>
               <p className="mb-1">
-                <span className="font-bold">Office:</span> 100 W. Walnut Street,
-                Decatur, Texas 76234
+                <span className="font-bold">Office:</span> 117 W. Main Street, Decatur, Texas 76234
               </p>
-              <p>
+              {/* <p>
                 <span className="font-bold">Private Entrance:</span> 201 N.
                 Trinity, Decatur, Texas 76234
-              </p>
-              <p className="text-blue-300 mt-2 mb-2 tracking-wide">
+              </p> */}
+              <p className="text-blue-300 mt-2 mb-8 tracking-wide">
                 Appointments only, no walk-ins
               </p>
               <a
-                href="https://maps.app.goo.gl/PmBFxvqFiDuWAWXW8"
+                href="https://maps.app.goo.gl/AiKokErLU212nUJZ6"
                 target="_blank"
                 className="flex h-16 w-48 py-5 px-10 btn-grad2 items-center justify-center rounded-[20px] drop-shadow-md"
               >
